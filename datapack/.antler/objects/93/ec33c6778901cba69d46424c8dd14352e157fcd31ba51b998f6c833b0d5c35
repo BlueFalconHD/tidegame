@@ -1,0 +1,4 @@
+
+function tide:world/check_bounds
+
+execute as @a if dimension tide:ocean unless entity @s[x=-376,dx=752,y=0,dy=80,z=-376,dz=752]

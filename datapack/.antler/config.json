@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 3,
+  "projectId": "7cc91f1f-f5f3-4880-b14d-9b93bde1d013",
+  "local": {
+    "root": "."
+  },
+  "remote": {
+    "url": "https://code.legitimoose.com/99c37226-0c25-4aff-81ee-e1562ac39a4f/",
+    "root": "/home/coder/project/datapack",
+    "rejectUnauthorized": true,
+    "sendOrigin": true,
+    "allowVersionMismatch": false
+  },
+  "sync": {
+    "deletePolicy": "confirm",
+    "ignores": [],
+    "reconciliationIntervalSeconds": 30,
+    "debounceMilliseconds": 180,
+    "concurrency": 32
+  },
+  "safety": {
+    "maxDeletes": 20,
+    "maxDeletePercent": 10
+  },
+  "git": {
+    "enabled": true,
+    "checkpoints": true
+  }
+}

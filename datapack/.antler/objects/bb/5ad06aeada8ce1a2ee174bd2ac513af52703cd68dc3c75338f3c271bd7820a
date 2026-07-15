@@ -1,0 +1,2 @@
+execute unless score @s tide.worldgen.kelp.height matches -2147483648..2147483647 store result score @s tide.worldgen.kelp.height run random roll 3..26
+execute if score @s tide.worldgen.kelp.height matches ..0 run return 0

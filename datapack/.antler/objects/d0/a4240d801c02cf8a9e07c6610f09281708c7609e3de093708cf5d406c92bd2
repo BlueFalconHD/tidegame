@@ -1,0 +1,2 @@
+# middle blue color
+tellraw @a {"text": "🌊 Loaded Tide", "color": "

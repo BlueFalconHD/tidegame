@@ -1,0 +1,3 @@
+execute store result score @s tide.worldgen.kelp.height run random roll 3..26
+tag @s add worldgen_kelp
+tp @s ~ ~-1 ~

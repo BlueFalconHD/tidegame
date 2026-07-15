@@ -1,0 +1,8 @@
+function tide:world/gen/load
+
+
+# tide.area_transition
+# this indicates a player being transitioned to/from different areas, namely
+# their island, others' islands, and the open ocean
+# values > 1 are the ticks until the animation is complete, and the player is fully transitioned to the new area
+scoreboard objectives add tide.area_transition dummy area_transition

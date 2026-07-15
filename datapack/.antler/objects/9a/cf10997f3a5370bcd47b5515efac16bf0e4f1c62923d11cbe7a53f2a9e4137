@@ -1,0 +1,10 @@
+execute unless score @s tide.worldgen.kelp.height matches -2147483648..2147483647 at @s run function tide:world/gen/kelp/init
+execute if score @s tide.worldgen.kelp.height matches ..0 run return run kill @s
+
+tp @s ~ ~1 ~
+execute unless block ~ ~ ~ water run return run function tide:world/gen/kelp/terminate
+
+setblock ~ ~ ~ kelp_plant strict
+scoreboard players remove @s tide.worldgen.kelp.height 1
+
+function tide:world/gen/kelp/step

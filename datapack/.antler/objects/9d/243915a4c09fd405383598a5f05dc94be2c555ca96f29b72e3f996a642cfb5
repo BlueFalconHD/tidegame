@@ -1,0 +1,2 @@
+execute unless score @s tide.worldgen.kelp.height matches -2147483648..2147483647 run function tide:world/gen/kelp/init
+execute if score @s tide.worldgen.kelp.height matches ..0 run kill @s

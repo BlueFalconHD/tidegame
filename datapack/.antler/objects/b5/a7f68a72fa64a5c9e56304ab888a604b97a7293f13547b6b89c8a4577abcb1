@@ -1,0 +1,6 @@
+# Arguments:
+# {centerx:0,centerz:0,dist:4,maxrange:100,target:"@e[type=marker,tag=worldgen_temp]"}
+#
+# Targets must be disposable marker entities; kelp generation consumes them.
+$spreadplayers $(centerx) $(centerz) $(dist) $(maxrange) false $(target)
+$execute as $(target) at @s run function tide:world/gen/kelp/step

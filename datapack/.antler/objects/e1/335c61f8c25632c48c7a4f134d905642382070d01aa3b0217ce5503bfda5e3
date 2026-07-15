@@ -1,0 +1,8 @@
+execute store result score @s tide.worldgen.kelp.height run random value 3..26
+
+say t
+
+tag @s add worldgen_kelp
+
+execute positioned over ocean_floor run tp @s ~ ~-1 ~
+# execute at @s run tp @s ~ ~-1 ~
