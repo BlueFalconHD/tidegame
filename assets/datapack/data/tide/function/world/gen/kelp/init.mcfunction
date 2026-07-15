@@ -1,4 +1,5 @@
-execute store result score @s tide.worldgen.kelp.height run random value 3..26
+##CONFIGURE
+execute store result score @s tide.worldgen.kelp.height run random value 3..14
 
 # say t
 

@@ -3,6 +3,8 @@ execute if score @s tide.worldgen.kelp.height matches ..0 run return run functio
 
 execute at @s run tp @s ~ ~1 ~
 execute at @s unless block ~ ~ ~ water run return run function tide:world/gen/kelp/terminate
+# execute at @s if block ~ ~1 ~ air run return run function tide:world/gen/kelp/terminate
+
 execute at @s run setblock ~ ~ ~ kelp_plant strict
 
 scoreboard players remove @s tide.worldgen.kelp.height 1
