@@ -1,3 +1,4 @@
+function tide:chunkload/load
 function tide:world/load
 
 # middle blue color
