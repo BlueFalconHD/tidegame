@@ -1,2 +1,0 @@
-# match players without a score value
-execute as @a[scores=!{tide.area_transition=

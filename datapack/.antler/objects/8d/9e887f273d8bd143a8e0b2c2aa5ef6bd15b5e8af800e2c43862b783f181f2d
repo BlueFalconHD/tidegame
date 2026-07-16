@@ -1,1 +1,0 @@
-scoreboard players set @s tide.area_transition 10

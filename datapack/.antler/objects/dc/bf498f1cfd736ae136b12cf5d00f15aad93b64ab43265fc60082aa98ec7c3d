@@ -1,2 +1,0 @@
-# light blue
-tellraw @a {"text": "🌊 Loaded Tide", "color": "", "bold": true}

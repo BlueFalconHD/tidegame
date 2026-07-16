@@ -1,3 +1,0 @@
-
-# Check if players are within the ocean dimension bounds
-execute as @a[scores={tide.area_transition=..0}] if dimension tide:ocean unless entity @s[x=-376,dx=752,y=0,dy=80,z=-376,dz=752] run function tide:world/ocean/leave

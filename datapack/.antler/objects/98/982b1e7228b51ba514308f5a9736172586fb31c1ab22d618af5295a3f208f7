@@ -1,2 +1,0 @@
-# match players without a score value (ie search for min..max) and set their score to 0
-execute as @a unless score @s tide.area_transition matches ..1 return run scoreboard players set @s tide.area_transition 0

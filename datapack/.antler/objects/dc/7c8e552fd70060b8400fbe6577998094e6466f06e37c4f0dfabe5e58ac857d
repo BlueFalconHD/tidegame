@@ -1,5 +1,0 @@
-execute at @s run summon marker ~ ~ ~ {Tags:["worldgen_kelp", "worldgen_temp"]}
-##CONFIGURE
-
-execute as @e[type=marker,tag=worldgen_temp] run function tide:world/gen/kelp/step
-execute as @e[type=marker,tag=worldgen_temp] run kill @s

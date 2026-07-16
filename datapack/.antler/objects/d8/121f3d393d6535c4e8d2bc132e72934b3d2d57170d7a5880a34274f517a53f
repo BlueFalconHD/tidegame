@@ -1,2 +1,0 @@
-# match players without a score value (ie search for min..max) and set their score to 0
-execute as @a[scores=!{tide.area_transition=
