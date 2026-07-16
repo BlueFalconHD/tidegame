@@ -1,5 +1,3 @@
-# Public helper: request contains local X/Z bounds; @s is the newly summoned marker.
-# Capturing the marker directly works even before selectors can see its chunk.
 execute unless entity @s[type=minecraft:marker] run return fail
 execute unless data storage tide:worldgen request run return run function tide:world/gen/queue/reject/no_request
 

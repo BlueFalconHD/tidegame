@@ -1,4 +1,3 @@
-# Read all coordinates as integers. /data get floors doubles, matching block/chunk coordinates.
 scoreboard players set #input_min_x tide.wgen 0
 scoreboard players set #input_min_z tide.wgen 0
 scoreboard players set #input_max_x tide.wgen 0

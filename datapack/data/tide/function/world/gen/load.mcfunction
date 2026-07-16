@@ -1,7 +1,5 @@
 scoreboard objectives add tide.worldgen.kelp.height dummy worldgen.kelp.height
 
-# Persistent FIFO chunk-loading queue. Existing storage is deliberately kept
-# across /reload and server restarts so an in-flight job can resume polling.
 scoreboard objectives add tide.wgen dummy
 scoreboard players set #sixteen tide.wgen 16
 execute unless score #next_id tide.wgen matches 1.. run scoreboard players set #next_id tide.wgen 1

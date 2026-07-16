@@ -1,5 +1,3 @@
-# Public API: copy a job compound to tide:worldgen request, then call this.
-# Returns success with the assigned job id, or failure with last_error populated.
 data remove storage tide:worldgen last_error
 execute unless data storage tide:worldgen request run return run function tide:world/gen/queue/reject/no_request
 
