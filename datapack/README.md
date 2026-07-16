@@ -16,11 +16,11 @@ Predicate Generator: https://misode.github.io/predicate/
 Item Commands converter (pre 1.20.5  to 1.20.5/1.20.6 components format):
 https://docs.papermc.io/misc/tools/item-command-converter
 
-## Asynchronous worldgen jobs
+## Runtime chunk-loading jobs
 
-Worldgen that needs unloaded chunks must use the persistent chunk-loading queue. See
-[`WORLDGEN_QUEUE.md`](WORLDGEN_QUEUE.md) for direct and marker-based enqueue examples,
-callback behavior, failure handling, and configuration.
+Systems that need to operate in unloaded chunks can use the persistent runtime queue. See
+the [`chunkload` runtime service](data/tide/function/runtime/chunkload/README.md) for the
+request format, callback behavior, limits, and operational commands.
 
 # Tips
 

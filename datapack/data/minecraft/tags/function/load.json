@@ -1,3 +1,3 @@
 {
-    "values": ["code:load", "tide:load"]
+    "values": ["code:load", "tide:load", "tide:runtime/load"]
 }
