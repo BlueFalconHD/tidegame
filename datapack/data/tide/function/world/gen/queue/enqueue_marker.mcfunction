@@ -1,5 +1,10 @@
 execute unless entity @s[type=minecraft:marker] run return fail
-execute unless data storage tide:worldgen request run return run function tide:world/gen/queue/reject/no_request
+
+scoreboard players set #prepare_ok tide.wgen 0
+execute store success score #prepare_ok tide.wgen run function tide:world/gen/queue/prepare with storage tide:worldgen request
+execute unless score #prepare_ok tide.wgen matches 1 run data remove storage tide:worldgen request
+execute unless score #prepare_ok tide.wgen matches 1 run kill @s
+execute unless score #prepare_ok tide.wgen matches 1 run return fail
 
 scoreboard players set #origin_x tide.wgen 0
 scoreboard players set #origin_y tide.wgen 0
@@ -39,8 +44,20 @@ data remove storage tide:worldgen request.min_offset_z
 data remove storage tide:worldgen request.max_offset_x
 data remove storage tide:worldgen request.max_offset_z
 
-scoreboard players set #enqueue_ok tide.wgen 0
-execute store success score #enqueue_ok tide.wgen run function tide:world/gen/queue/enqueue
-execute unless score #enqueue_ok tide.wgen matches 1 run kill @s
-execute unless score #enqueue_ok tide.wgen matches 1 run return fail
+scoreboard players operation #min_chunk_x tide.wgen = #marker_min_x tide.wgen
+scoreboard players operation #min_chunk_z tide.wgen = #marker_min_z tide.wgen
+scoreboard players operation #max_chunk_x tide.wgen = #marker_max_x tide.wgen
+scoreboard players operation #max_chunk_z tide.wgen = #marker_max_z tide.wgen
+scoreboard players operation #min_chunk_x tide.wgen /= #sixteen tide.wgen
+scoreboard players operation #min_chunk_z tide.wgen /= #sixteen tide.wgen
+scoreboard players operation #max_chunk_x tide.wgen /= #sixteen tide.wgen
+scoreboard players operation #max_chunk_z tide.wgen /= #sixteen tide.wgen
+
+execute store result storage tide:worldgen request.min_chunk_x int 1 run scoreboard players get #min_chunk_x tide.wgen
+execute store result storage tide:worldgen request.min_chunk_z int 1 run scoreboard players get #min_chunk_z tide.wgen
+execute store result storage tide:worldgen request.max_chunk_x int 1 run scoreboard players get #max_chunk_x tide.wgen
+execute store result storage tide:worldgen request.max_chunk_z int 1 run scoreboard players get #max_chunk_z tide.wgen
+
+data modify storage tide:worldgen queue append from storage tide:worldgen request
+data remove storage tide:worldgen request
 return 1

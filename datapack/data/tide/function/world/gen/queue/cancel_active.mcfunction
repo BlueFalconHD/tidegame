@@ -1,3 +1,5 @@
 execute unless data storage tide:worldgen active run return 0
-data modify storage tide:worldgen active.error set value {code:"cancelled",message:"The active job was cancelled."}
-return run function tide:world/gen/queue/fail
+function tide:world/gen/queue/unforce with storage tide:worldgen active
+data remove storage tide:worldgen active
+data remove storage tide:worldgen scratch
+return 1
