@@ -12,6 +12,7 @@ scoreboard players operation #load_max_z tide.worldgen.map.tmp = @s tide.worldge
 execute if data storage tide:chunkload request.template_check if entity @s[tag=tide.worldgen.map.islet] run function tide:worldgen/map/structure/internal/include_template_check
 execute if data storage tide:chunkload request.template_check if entity @s[tag=tide.worldgen.map.trawler] run function tide:worldgen/map/structure/internal/include_template_check
 execute if data storage tide:chunkload request.template_check if entity @s[tag=tide.worldgen.map.ghost_ship] run function tide:worldgen/map/structure/internal/include_template_check
+execute if data storage tide:chunkload request.template_check if entity @s[tag=tide.worldgen.map.outpost] run function tide:worldgen/map/structure/internal/include_template_check
 
 execute unless data storage tide:chunkload request.corner store result storage tide:chunkload request.x int 1 run scoreboard players get @s tide.worldgen.map.place.x
 execute unless data storage tide:chunkload request.corner store result storage tide:chunkload request.z int 1 run scoreboard players get @s tide.worldgen.map.place.z
