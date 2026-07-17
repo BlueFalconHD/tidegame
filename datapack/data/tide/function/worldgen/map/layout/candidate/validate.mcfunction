@@ -13,4 +13,5 @@ execute as @e[type=minecraft:marker,tag=tide.worldgen.map.controller,tag=tide.wo
 execute if score #collision tide.worldgen.map.tmp matches 1 run scoreboard players set #valid tide.worldgen.map.tmp 0
 
 execute if entity @s[tag=tide.worldgen.map.islet] run function tide:worldgen/map/layout/candidate/spacing/islet
+execute if entity @s[tag=tide.worldgen.map.ghost_ship] run function tide:worldgen/map/layout/candidate/spacing/ghost_ship
 return 1

@@ -1,3 +1,5 @@
+execute if entity @s[tag=tide.worldgen.map.build_pending] run function tide:worldgen/map/progress/build_started
+
 execute if entity @s[tag=tide.worldgen.map.islet] run return run function tide:worldgen/map/structure/build/islet
 execute if entity @s[tag=tide.worldgen.map.trawler] run return run function tide:worldgen/map/structure/build/trawler
 execute if entity @s[tag=tide.worldgen.map.abandoned_raft] run return run function tide:worldgen/map/structure/build/abandoned_raft

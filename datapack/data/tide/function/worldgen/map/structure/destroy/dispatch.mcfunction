@@ -1,3 +1,5 @@
+execute if entity @s[tag=tide.worldgen.map.destroy_pending] run function tide:worldgen/map/progress/destroy_started
+
 execute if entity @s[tag=tide.worldgen.map.islet] run return run function tide:worldgen/map/structure/destroy/islet
 execute if entity @s[tag=tide.worldgen.map.trawler] run return run function tide:worldgen/map/structure/destroy/trawler
 execute if entity @s[tag=tide.worldgen.map.abandoned_raft] run return run function tide:worldgen/map/structure/destroy/abandoned_raft
