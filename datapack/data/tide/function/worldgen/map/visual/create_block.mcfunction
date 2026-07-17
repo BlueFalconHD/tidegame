@@ -1,0 +1,1 @@
+$summon minecraft:block_display ~ ~0.05 ~ {Tags:["tide.worldgen.map","tide.worldgen.map.visual"],block_state:{Name:"$(block)"},brightness:{block:15,sky:15},view_range:64f,transformation:{translation:[0f,0f,0f],left_rotation:[0f,0f,0f,1f],scale:[$(width),0.0625f,$(depth)],right_rotation:[0f,0f,0f,1f]}}

@@ -1,78 +1,80 @@
+function tide:worldgen/map/load
+
 # Common salvage: 8 abandoned rafts
-summon armor_stand ~ ~ ~ {Tags:["tide.worldgen.map","tide.worldgen.map.abandoned_raft"],NoGravity:1b,Invulnerable:1b,CustomNameVisible:1b,CustomName:{text:"Abandoned Raft"}}
-summon armor_stand ~ ~ ~ {Tags:["tide.worldgen.map","tide.worldgen.map.abandoned_raft"],NoGravity:1b,Invulnerable:1b,CustomNameVisible:1b,CustomName:{text:"Abandoned Raft"}}
-summon armor_stand ~ ~ ~ {Tags:["tide.worldgen.map","tide.worldgen.map.abandoned_raft"],NoGravity:1b,Invulnerable:1b,CustomNameVisible:1b,CustomName:{text:"Abandoned Raft"}}
-summon armor_stand ~ ~ ~ {Tags:["tide.worldgen.map","tide.worldgen.map.abandoned_raft"],NoGravity:1b,Invulnerable:1b,CustomNameVisible:1b,CustomName:{text:"Abandoned Raft"}}
-summon armor_stand ~ ~ ~ {Tags:["tide.worldgen.map","tide.worldgen.map.abandoned_raft"],NoGravity:1b,Invulnerable:1b,CustomNameVisible:1b,CustomName:{text:"Abandoned Raft"}}
-summon armor_stand ~ ~ ~ {Tags:["tide.worldgen.map","tide.worldgen.map.abandoned_raft"],NoGravity:1b,Invulnerable:1b,CustomNameVisible:1b,CustomName:{text:"Abandoned Raft"}}
-summon armor_stand ~ ~ ~ {Tags:["tide.worldgen.map","tide.worldgen.map.abandoned_raft"],NoGravity:1b,Invulnerable:1b,CustomNameVisible:1b,CustomName:{text:"Abandoned Raft"}}
-summon armor_stand ~ ~ ~ {Tags:["tide.worldgen.map","tide.worldgen.map.abandoned_raft"],NoGravity:1b,Invulnerable:1b,CustomNameVisible:1b,CustomName:{text:"Abandoned Raft"}}
+execute summon minecraft:marker run function tide:worldgen/map/structure/assign/abandoned_raft
+execute summon minecraft:marker run function tide:worldgen/map/structure/assign/abandoned_raft
+execute summon minecraft:marker run function tide:worldgen/map/structure/assign/abandoned_raft
+execute summon minecraft:marker run function tide:worldgen/map/structure/assign/abandoned_raft
+execute summon minecraft:marker run function tide:worldgen/map/structure/assign/abandoned_raft
+execute summon minecraft:marker run function tide:worldgen/map/structure/assign/abandoned_raft
+execute summon minecraft:marker run function tide:worldgen/map/structure/assign/abandoned_raft
+execute summon minecraft:marker run function tide:worldgen/map/structure/assign/abandoned_raft
 
 # Common salvage: 10 buoys
-summon armor_stand ~ ~ ~ {Tags:["tide.worldgen.map","tide.worldgen.map.buoy"],NoGravity:1b,Invulnerable:1b,CustomNameVisible:1b,CustomName:{text:"Buoy"}}
-summon armor_stand ~ ~ ~ {Tags:["tide.worldgen.map","tide.worldgen.map.buoy"],NoGravity:1b,Invulnerable:1b,CustomNameVisible:1b,CustomName:{text:"Buoy"}}
-summon armor_stand ~ ~ ~ {Tags:["tide.worldgen.map","tide.worldgen.map.buoy"],NoGravity:1b,Invulnerable:1b,CustomNameVisible:1b,CustomName:{text:"Buoy"}}
-summon armor_stand ~ ~ ~ {Tags:["tide.worldgen.map","tide.worldgen.map.buoy"],NoGravity:1b,Invulnerable:1b,CustomNameVisible:1b,CustomName:{text:"Buoy"}}
-summon armor_stand ~ ~ ~ {Tags:["tide.worldgen.map","tide.worldgen.map.buoy"],NoGravity:1b,Invulnerable:1b,CustomNameVisible:1b,CustomName:{text:"Buoy"}}
-summon armor_stand ~ ~ ~ {Tags:["tide.worldgen.map","tide.worldgen.map.buoy"],NoGravity:1b,Invulnerable:1b,CustomNameVisible:1b,CustomName:{text:"Buoy"}}
-summon armor_stand ~ ~ ~ {Tags:["tide.worldgen.map","tide.worldgen.map.buoy"],NoGravity:1b,Invulnerable:1b,CustomNameVisible:1b,CustomName:{text:"Buoy"}}
-summon armor_stand ~ ~ ~ {Tags:["tide.worldgen.map","tide.worldgen.map.buoy"],NoGravity:1b,Invulnerable:1b,CustomNameVisible:1b,CustomName:{text:"Buoy"}}
-summon armor_stand ~ ~ ~ {Tags:["tide.worldgen.map","tide.worldgen.map.buoy"],NoGravity:1b,Invulnerable:1b,CustomNameVisible:1b,CustomName:{text:"Buoy"}}
-summon armor_stand ~ ~ ~ {Tags:["tide.worldgen.map","tide.worldgen.map.buoy"],NoGravity:1b,Invulnerable:1b,CustomNameVisible:1b,CustomName:{text:"Buoy"}}
+execute summon minecraft:marker run function tide:worldgen/map/structure/assign/buoy
+execute summon minecraft:marker run function tide:worldgen/map/structure/assign/buoy
+execute summon minecraft:marker run function tide:worldgen/map/structure/assign/buoy
+execute summon minecraft:marker run function tide:worldgen/map/structure/assign/buoy
+execute summon minecraft:marker run function tide:worldgen/map/structure/assign/buoy
+execute summon minecraft:marker run function tide:worldgen/map/structure/assign/buoy
+execute summon minecraft:marker run function tide:worldgen/map/structure/assign/buoy
+execute summon minecraft:marker run function tide:worldgen/map/structure/assign/buoy
+execute summon minecraft:marker run function tide:worldgen/map/structure/assign/buoy
+execute summon minecraft:marker run function tide:worldgen/map/structure/assign/buoy
 
 # Rare combat destination: 3 outposts
-summon armor_stand ~ ~ ~ {Tags:["tide.worldgen.map","tide.worldgen.map.outpost"],NoGravity:1b,Invulnerable:1b,CustomNameVisible:1b,CustomName:{text:"Outpost"}}
-summon armor_stand ~ ~ ~ {Tags:["tide.worldgen.map","tide.worldgen.map.outpost"],NoGravity:1b,Invulnerable:1b,CustomNameVisible:1b,CustomName:{text:"Outpost"}}
-summon armor_stand ~ ~ ~ {Tags:["tide.worldgen.map","tide.worldgen.map.outpost"],NoGravity:1b,Invulnerable:1b,CustomNameVisible:1b,CustomName:{text:"Outpost"}}
+execute summon minecraft:marker run function tide:worldgen/map/structure/assign/outpost
+execute summon minecraft:marker run function tide:worldgen/map/structure/assign/outpost
+execute summon minecraft:marker run function tide:worldgen/map/structure/assign/outpost
 
 # Rare chained reward: 4 buried treasures
-summon armor_stand ~ ~ ~ {Tags:["tide.worldgen.map","tide.worldgen.map.buried_treasure"],NoGravity:1b,Invulnerable:1b,CustomNameVisible:1b,CustomName:{text:"Buried Treasure"}}
-summon armor_stand ~ ~ ~ {Tags:["tide.worldgen.map","tide.worldgen.map.buried_treasure"],NoGravity:1b,Invulnerable:1b,CustomNameVisible:1b,CustomName:{text:"Buried Treasure"}}
-summon armor_stand ~ ~ ~ {Tags:["tide.worldgen.map","tide.worldgen.map.buried_treasure"],NoGravity:1b,Invulnerable:1b,CustomNameVisible:1b,CustomName:{text:"Buried Treasure"}}
-summon armor_stand ~ ~ ~ {Tags:["tide.worldgen.map","tide.worldgen.map.buried_treasure"],NoGravity:1b,Invulnerable:1b,CustomNameVisible:1b,CustomName:{text:"Buried Treasure"}}
+execute summon minecraft:marker run function tide:worldgen/map/structure/assign/buried_treasure
+execute summon minecraft:marker run function tide:worldgen/map/structure/assign/buried_treasure
+execute summon minecraft:marker run function tide:worldgen/map/structure/assign/buried_treasure
+execute summon minecraft:marker run function tide:worldgen/map/structure/assign/buried_treasure
 
 # Mid-frequency fishing destination: 6 reefs
-summon armor_stand ~ ~ ~ {Tags:["tide.worldgen.map","tide.worldgen.map.reef"],NoGravity:1b,Invulnerable:1b,CustomNameVisible:1b,CustomName:{text:"Reef"}}
-summon armor_stand ~ ~ ~ {Tags:["tide.worldgen.map","tide.worldgen.map.reef"],NoGravity:1b,Invulnerable:1b,CustomNameVisible:1b,CustomName:{text:"Reef"}}
-summon armor_stand ~ ~ ~ {Tags:["tide.worldgen.map","tide.worldgen.map.reef"],NoGravity:1b,Invulnerable:1b,CustomNameVisible:1b,CustomName:{text:"Reef"}}
-summon armor_stand ~ ~ ~ {Tags:["tide.worldgen.map","tide.worldgen.map.reef"],NoGravity:1b,Invulnerable:1b,CustomNameVisible:1b,CustomName:{text:"Reef"}}
-summon armor_stand ~ ~ ~ {Tags:["tide.worldgen.map","tide.worldgen.map.reef"],NoGravity:1b,Invulnerable:1b,CustomNameVisible:1b,CustomName:{text:"Reef"}}
-summon armor_stand ~ ~ ~ {Tags:["tide.worldgen.map","tide.worldgen.map.reef"],NoGravity:1b,Invulnerable:1b,CustomNameVisible:1b,CustomName:{text:"Reef"}}
+execute summon minecraft:marker run function tide:worldgen/map/structure/assign/reef
+execute summon minecraft:marker run function tide:worldgen/map/structure/assign/reef
+execute summon minecraft:marker run function tide:worldgen/map/structure/assign/reef
+execute summon minecraft:marker run function tide:worldgen/map/structure/assign/reef
+execute summon minecraft:marker run function tide:worldgen/map/structure/assign/reef
+execute summon minecraft:marker run function tide:worldgen/map/structure/assign/reef
 
 # Rare combat salvage: 4 ghost ships
-summon armor_stand ~ ~ ~ {Tags:["tide.worldgen.map","tide.worldgen.map.ghost_ship"],NoGravity:1b,Invulnerable:1b,CustomNameVisible:1b,CustomName:{text:"Ghost Ship"}}
-summon armor_stand ~ ~ ~ {Tags:["tide.worldgen.map","tide.worldgen.map.ghost_ship"],NoGravity:1b,Invulnerable:1b,CustomNameVisible:1b,CustomName:{text:"Ghost Ship"}}
-summon armor_stand ~ ~ ~ {Tags:["tide.worldgen.map","tide.worldgen.map.ghost_ship"],NoGravity:1b,Invulnerable:1b,CustomNameVisible:1b,CustomName:{text:"Ghost Ship"}}
-summon armor_stand ~ ~ ~ {Tags:["tide.worldgen.map","tide.worldgen.map.ghost_ship"],NoGravity:1b,Invulnerable:1b,CustomNameVisible:1b,CustomName:{text:"Ghost Ship"}}
+execute summon minecraft:marker run function tide:worldgen/map/structure/assign/ghost_ship
+execute summon minecraft:marker run function tide:worldgen/map/structure/assign/ghost_ship
+execute summon minecraft:marker run function tide:worldgen/map/structure/assign/ghost_ship
+execute summon minecraft:marker run function tide:worldgen/map/structure/assign/ghost_ship
 
 # Mid-frequency resource destination: 6 islets
-summon armor_stand ~ ~ ~ {Tags:["tide.worldgen.map","tide.worldgen.map.islet"],NoGravity:1b,Invulnerable:1b,CustomNameVisible:1b,CustomName:{text:"Islet"}}
-summon armor_stand ~ ~ ~ {Tags:["tide.worldgen.map","tide.worldgen.map.islet"],NoGravity:1b,Invulnerable:1b,CustomNameVisible:1b,CustomName:{text:"Islet"}}
-summon armor_stand ~ ~ ~ {Tags:["tide.worldgen.map","tide.worldgen.map.islet"],NoGravity:1b,Invulnerable:1b,CustomNameVisible:1b,CustomName:{text:"Islet"}}
-summon armor_stand ~ ~ ~ {Tags:["tide.worldgen.map","tide.worldgen.map.islet"],NoGravity:1b,Invulnerable:1b,CustomNameVisible:1b,CustomName:{text:"Islet"}}
-summon armor_stand ~ ~ ~ {Tags:["tide.worldgen.map","tide.worldgen.map.islet"],NoGravity:1b,Invulnerable:1b,CustomNameVisible:1b,CustomName:{text:"Islet"}}
-summon armor_stand ~ ~ ~ {Tags:["tide.worldgen.map","tide.worldgen.map.islet"],NoGravity:1b,Invulnerable:1b,CustomNameVisible:1b,CustomName:{text:"Islet"}}
+execute summon minecraft:marker run function tide:worldgen/map/structure/assign/islet
+execute summon minecraft:marker run function tide:worldgen/map/structure/assign/islet
+execute summon minecraft:marker run function tide:worldgen/map/structure/assign/islet
+execute summon minecraft:marker run function tide:worldgen/map/structure/assign/islet
+execute summon minecraft:marker run function tide:worldgen/map/structure/assign/islet
+execute summon minecraft:marker run function tide:worldgen/map/structure/assign/islet
 
 # Common salvage: 7 shipwrecks
-summon armor_stand ~ ~ ~ {Tags:["tide.worldgen.map","tide.worldgen.map.shipwreck"],NoGravity:1b,Invulnerable:1b,CustomNameVisible:1b,CustomName:{text:"Shipwreck"}}
-summon armor_stand ~ ~ ~ {Tags:["tide.worldgen.map","tide.worldgen.map.shipwreck"],NoGravity:1b,Invulnerable:1b,CustomNameVisible:1b,CustomName:{text:"Shipwreck"}}
-summon armor_stand ~ ~ ~ {Tags:["tide.worldgen.map","tide.worldgen.map.shipwreck"],NoGravity:1b,Invulnerable:1b,CustomNameVisible:1b,CustomName:{text:"Shipwreck"}}
-summon armor_stand ~ ~ ~ {Tags:["tide.worldgen.map","tide.worldgen.map.shipwreck"],NoGravity:1b,Invulnerable:1b,CustomNameVisible:1b,CustomName:{text:"Shipwreck"}}
-summon armor_stand ~ ~ ~ {Tags:["tide.worldgen.map","tide.worldgen.map.shipwreck"],NoGravity:1b,Invulnerable:1b,CustomNameVisible:1b,CustomName:{text:"Shipwreck"}}
-summon armor_stand ~ ~ ~ {Tags:["tide.worldgen.map","tide.worldgen.map.shipwreck"],NoGravity:1b,Invulnerable:1b,CustomNameVisible:1b,CustomName:{text:"Shipwreck"}}
-summon armor_stand ~ ~ ~ {Tags:["tide.worldgen.map","tide.worldgen.map.shipwreck"],NoGravity:1b,Invulnerable:1b,CustomNameVisible:1b,CustomName:{text:"Shipwreck"}}
+execute summon minecraft:marker run function tide:worldgen/map/structure/assign/shipwreck
+execute summon minecraft:marker run function tide:worldgen/map/structure/assign/shipwreck
+execute summon minecraft:marker run function tide:worldgen/map/structure/assign/shipwreck
+execute summon minecraft:marker run function tide:worldgen/map/structure/assign/shipwreck
+execute summon minecraft:marker run function tide:worldgen/map/structure/assign/shipwreck
+execute summon minecraft:marker run function tide:worldgen/map/structure/assign/shipwreck
+execute summon minecraft:marker run function tide:worldgen/map/structure/assign/shipwreck
 
 # Rare underwater destination: 3 sunken cities
-summon armor_stand ~ ~ ~ {Tags:["tide.worldgen.map","tide.worldgen.map.sunken_city"],NoGravity:1b,Invulnerable:1b,CustomNameVisible:1b,CustomName:{text:"Sunken City"}}
-summon armor_stand ~ ~ ~ {Tags:["tide.worldgen.map","tide.worldgen.map.sunken_city"],NoGravity:1b,Invulnerable:1b,CustomNameVisible:1b,CustomName:{text:"Sunken City"}}
-summon armor_stand ~ ~ ~ {Tags:["tide.worldgen.map","tide.worldgen.map.sunken_city"],NoGravity:1b,Invulnerable:1b,CustomNameVisible:1b,CustomName:{text:"Sunken City"}}
+execute summon minecraft:marker run function tide:worldgen/map/structure/assign/sunken_city
+execute summon minecraft:marker run function tide:worldgen/map/structure/assign/sunken_city
+execute summon minecraft:marker run function tide:worldgen/map/structure/assign/sunken_city
 
 # Mid-frequency fishing gear: 5 trawlers
-summon armor_stand ~ ~ ~ {Tags:["tide.worldgen.map","tide.worldgen.map.trawler"],NoGravity:1b,Invulnerable:1b,CustomNameVisible:1b,CustomName:{text:"Trawler"}}
-summon armor_stand ~ ~ ~ {Tags:["tide.worldgen.map","tide.worldgen.map.trawler"],NoGravity:1b,Invulnerable:1b,CustomNameVisible:1b,CustomName:{text:"Trawler"}}
-summon armor_stand ~ ~ ~ {Tags:["tide.worldgen.map","tide.worldgen.map.trawler"],NoGravity:1b,Invulnerable:1b,CustomNameVisible:1b,CustomName:{text:"Trawler"}}
-summon armor_stand ~ ~ ~ {Tags:["tide.worldgen.map","tide.worldgen.map.trawler"],NoGravity:1b,Invulnerable:1b,CustomNameVisible:1b,CustomName:{text:"Trawler"}}
-summon armor_stand ~ ~ ~ {Tags:["tide.worldgen.map","tide.worldgen.map.trawler"],NoGravity:1b,Invulnerable:1b,CustomNameVisible:1b,CustomName:{text:"Trawler"}}
+execute summon minecraft:marker run function tide:worldgen/map/structure/assign/trawler
+execute summon minecraft:marker run function tide:worldgen/map/structure/assign/trawler
+execute summon minecraft:marker run function tide:worldgen/map/structure/assign/trawler
+execute summon minecraft:marker run function tide:worldgen/map/structure/assign/trawler
+execute summon minecraft:marker run function tide:worldgen/map/structure/assign/trawler
 
-execute at @e[tag=tide.worldgen.map.center] run tp @e[tag=tide.worldgen.map] ~ ~ ~
-execute at @e[tag=tide.worldgen.map.center] run function tide:worldgen/map/randomize
+execute at @e[tag=tide.worldgen.map.center,limit=1] run tp @e[type=minecraft:marker,tag=tide.worldgen.map.controller] ~ ~ ~
+execute at @e[tag=tide.worldgen.map.center,limit=1] run function tide:worldgen/map/randomize
