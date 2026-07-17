@@ -1,4 +1,4 @@
-# The chunkload callback enters here in tide:ocean at the placement anchor.
+# The chunkload callback enters here in tide:ocean at the footprint's minimum X/Z corner.
 scoreboard players set #structure_id tide.identifier.structure -1
 execute store result score #structure_id tide.identifier.structure run data get storage tide:chunkload active.structure_id
 scoreboard players set #dispatch tide.worldgen.map.tmp 0
