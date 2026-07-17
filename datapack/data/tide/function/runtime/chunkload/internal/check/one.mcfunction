@@ -1,1 +1,1 @@
-$execute in $(dimension) unless loaded $(x) $(y) $(z) run scoreboard players set #all_ready tide.chunkload 0
+$execute in $(dimension) if loaded $(x) $(y) $(z) run scoreboard players set #chunk_ready tide.chunkload 1

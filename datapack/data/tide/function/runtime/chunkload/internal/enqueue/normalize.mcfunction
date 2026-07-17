@@ -35,24 +35,6 @@ execute if score #min_remainder_z tide.chunkload matches ..-1 run scoreboard pla
 execute if score #max_remainder_x tide.chunkload matches ..-1 run scoreboard players remove #max_chunk_x tide.chunkload 1
 execute if score #max_remainder_z tide.chunkload matches ..-1 run scoreboard players remove #max_chunk_z tide.chunkload 1
 
-scoreboard players operation #span_x tide.chunkload = #max_chunk_x tide.chunkload
-scoreboard players operation #span_x tide.chunkload -= #min_chunk_x tide.chunkload
-scoreboard players add #span_x tide.chunkload 1
-scoreboard players operation #span_z tide.chunkload = #max_chunk_z tide.chunkload
-scoreboard players operation #span_z tide.chunkload -= #min_chunk_z tide.chunkload
-scoreboard players add #span_z tide.chunkload 1
-execute if score #span_x tide.chunkload matches 257.. run data modify storage tide:chunkload last_error set value "Request exceeds the 256 chunk limit"
-execute if score #span_x tide.chunkload matches 257.. run data remove storage tide:chunkload request
-execute if score #span_x tide.chunkload matches 257.. run return fail
-execute if score #span_z tide.chunkload matches 257.. run data modify storage tide:chunkload last_error set value "Request exceeds the 256 chunk limit"
-execute if score #span_z tide.chunkload matches 257.. run data remove storage tide:chunkload request
-execute if score #span_z tide.chunkload matches 257.. run return fail
-scoreboard players operation #chunk_count tide.chunkload = #span_x tide.chunkload
-scoreboard players operation #chunk_count tide.chunkload *= #span_z tide.chunkload
-execute if score #chunk_count tide.chunkload matches 257.. run data modify storage tide:chunkload last_error set value "Request exceeds the 256 chunk limit"
-execute if score #chunk_count tide.chunkload matches 257.. run data remove storage tide:chunkload request
-execute if score #chunk_count tide.chunkload matches 257.. run return fail
-
 scoreboard players set #queue_size tide.chunkload 0
 execute store result score #queue_size tide.chunkload run data get storage tide:chunkload queue
 execute if score #queue_size tide.chunkload matches 128.. run data modify storage tide:chunkload last_error set value "Queue already contains 128 requests"

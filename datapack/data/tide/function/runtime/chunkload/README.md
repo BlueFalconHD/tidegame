@@ -3,7 +3,8 @@
 `tide:runtime/chunkload` is a generic runtime service for work that must wait until a
 rectangular set of chunks reports as loaded. It processes one request at a time, keeps
 queued and active state across `/reload`, invokes the request callback, and releases the
-temporary force-load range afterward.
+temporary force-load region afterward. Regions are divided into command-sized tiles of at
+most 256 chunks and processed incrementally across ticks.
 
 The service does not know about worldgen, structure templates, markers, or entities. A
 caller can include any additional data it needs in the request; the complete request is
@@ -44,15 +45,22 @@ complete and `return fail` when it cannot be completed.
 ## Limits
 
 - Requests are processed sequentially.
-- A request may cover at most 256 chunks.
+- A request may cover any valid rectangular region. The service issues multiple force-load
+  commands when the region contains more than 256 chunks.
+- At most one 256-chunk force-load tile is added or removed per tick.
+- Readiness checks examine at most 256 chunks per tick.
 - At most 128 requests may wait in the queue.
 
 ## Operations
 
 ```mcfunction
-# Cancel the active request and release its force-loaded range
+# Cancel the active request and begin releasing its force-loaded tiles
 function tide:runtime/chunkload/cancel_active
 
 # Discard waiting requests without touching the active request
 function tide:runtime/chunkload/clear_pending
 ```
+
+Cancellation prevents the callback and changes the active request to `releasing`. The
+request remains active until its previously added tiles have been removed across subsequent
+ticks, after which it is recorded in `last_job` with a `cancelled` status.
