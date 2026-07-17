@@ -1,2 +1,2 @@
 scoreboard objectives add tide.identifier.structure dummy
-scoreboard players set .next tide.identifier.structure 0
+scoreboard players add .next tide.identifier.structure 0
