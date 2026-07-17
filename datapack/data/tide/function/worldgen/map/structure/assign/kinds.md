@@ -1,7 +1,7 @@
 | ID | Structure | Size X | Size Z | Padding |
 |---:|---|---:|---:|---:|
-| 1 | Islet | 93 | 102 | 12 |
-| 2 | Trawler | 7 | 16 | 6 |
+| 1 | Islet | 102 | 93 | 12 |
+| 2 | Trawler | 7 | 15 | 6 |
 | 3 | Abandoned raft | 5 | 6 | 4 |
 | 4 | Buoy | 3 | 3 | 4 |
 | 5 | Outpost | 16 | 16 | 8 |
