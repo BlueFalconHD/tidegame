@@ -1,6 +1,6 @@
-# X 0..2, Z 0..4
-fill ~ ~-34 ~ ~2 ~-30 ~4 minecraft:sand
-fill ~ ~-29 ~ ~2 ~-2 ~4 minecraft:water
-fill ~ ~-1 ~ ~2 ~20 ~4 minecraft:air
+# X -4..6, Z -4..8
+fill ~-4 ~-34 ~-4 ~6 ~-30 ~8 minecraft:sand
+fill ~-4 ~-29 ~-4 ~6 ~-2 ~8 minecraft:water
+fill ~-4 ~-1 ~-4 ~6 ~20 ~8 minecraft:air
 
 return 1
