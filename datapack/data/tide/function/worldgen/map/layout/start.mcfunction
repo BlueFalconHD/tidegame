@@ -2,8 +2,9 @@ tag @e[type=minecraft:marker,tag=tide.worldgen.map.controller] remove tide.world
 tag @e[type=minecraft:marker,tag=tide.worldgen.map.controller] remove tide.worldgen.map.failed
 tag @e[type=minecraft:marker,tag=tide.worldgen.map.controller] add tide.worldgen.map.pending
 
-scoreboard players set #map_min tide.worldgen.map.tmp -328
-scoreboard players set #map_max tide.worldgen.map.tmp 327
+# Keep the outermost chunk of the 47x47 ocean clear for border spawns.
+scoreboard players set #map_min tide.worldgen.map.tmp -360
+scoreboard players set #map_max tide.worldgen.map.tmp 359
 
 # Reserve larger padded footprints first.
 execute as @e[type=minecraft:marker,tag=tide.worldgen.map.pending,tag=tide.worldgen.map.islet] run function tide:worldgen/map/layout/candidate/start
