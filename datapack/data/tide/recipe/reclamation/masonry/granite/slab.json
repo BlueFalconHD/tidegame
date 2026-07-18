@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "tide:reclamation/granite",
+  "ingredients": [
+    "minecraft:granite_slab",
+    "minecraft:granite_slab",
+    "minecraft:granite_slab"
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:granite"
+  }
+}

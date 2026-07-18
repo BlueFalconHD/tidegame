@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "tide:reclamation/crimson_planks",
+  "ingredients": [
+    "minecraft:crimson_fence_gate"
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:crimson_planks"
+  }
+}

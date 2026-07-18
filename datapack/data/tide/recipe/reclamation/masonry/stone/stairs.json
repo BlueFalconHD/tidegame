@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "tide:reclamation/stone",
+  "ingredients": [
+    "minecraft:stone_stairs",
+    "minecraft:stone_stairs"
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:stone"
+  }
+}

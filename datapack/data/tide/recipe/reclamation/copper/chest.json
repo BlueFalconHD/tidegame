@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "tide:reclamation/copper_ingot",
+  "ingredients": [
+    "#minecraft:copper_chests"
+  ],
+  "result": {
+    "count": 4,
+    "id": "minecraft:copper_ingot"
+  }
+}

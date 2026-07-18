@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "tide:reclamation/end_stone_bricks",
+  "ingredients": [
+    "minecraft:end_stone_brick_wall",
+    "minecraft:end_stone_brick_wall"
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:end_stone_bricks"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "tide:reclamation/polished_granite",
+  "ingredients": [
+    "minecraft:polished_granite_stairs",
+    "minecraft:polished_granite_stairs"
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:polished_granite"
+  }
+}

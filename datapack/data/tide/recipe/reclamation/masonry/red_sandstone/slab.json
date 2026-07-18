@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "tide:reclamation/red_sandstone",
+  "ingredients": [
+    "minecraft:red_sandstone_slab",
+    "minecraft:red_sandstone_slab",
+    "minecraft:red_sandstone_slab"
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:red_sandstone"
+  }
+}

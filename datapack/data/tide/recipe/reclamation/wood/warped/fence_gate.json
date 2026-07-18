@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "tide:reclamation/warped_planks",
+  "ingredients": [
+    "minecraft:warped_fence_gate"
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:warped_planks"
+  }
+}

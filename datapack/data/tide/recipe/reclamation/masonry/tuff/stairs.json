@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "tide:reclamation/tuff",
+  "ingredients": [
+    "minecraft:tuff_stairs",
+    "minecraft:tuff_stairs"
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:tuff"
+  }
+}

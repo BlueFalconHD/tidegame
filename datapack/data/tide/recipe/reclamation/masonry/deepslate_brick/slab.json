@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "tide:reclamation/deepslate_bricks",
+  "ingredients": [
+    "minecraft:deepslate_brick_slab",
+    "minecraft:deepslate_brick_slab",
+    "minecraft:deepslate_brick_slab"
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:deepslate_bricks"
+  }
+}

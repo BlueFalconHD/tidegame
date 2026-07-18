@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "tide:reclamation/sandstone",
+  "ingredients": [
+    "minecraft:sandstone_slab",
+    "minecraft:sandstone_slab",
+    "minecraft:sandstone_slab"
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:sandstone"
+  }
+}

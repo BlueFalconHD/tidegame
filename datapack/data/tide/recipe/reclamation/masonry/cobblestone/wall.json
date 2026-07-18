@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "tide:reclamation/cobblestone",
+  "ingredients": [
+    "minecraft:cobblestone_wall",
+    "minecraft:cobblestone_wall"
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:cobblestone"
+  }
+}

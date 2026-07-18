@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "tide:reclamation/iron_ingot",
+  "ingredients": [
+    "#minecraft:anvil"
+  ],
+  "result": {
+    "count": 4,
+    "id": "minecraft:iron_ingot"
+  }
+}

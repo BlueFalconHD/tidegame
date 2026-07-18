@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "tide:reclamation/oak_planks",
+  "ingredients": [
+    "#tide:reclamation/wooden_containers"
+  ],
+  "result": {
+    "count": 4,
+    "id": "minecraft:oak_planks"
+  }
+}

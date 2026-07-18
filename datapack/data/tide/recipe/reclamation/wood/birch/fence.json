@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "tide:reclamation/birch_planks",
+  "ingredients": [
+    "minecraft:birch_fence",
+    "minecraft:birch_fence",
+    "minecraft:birch_fence"
+  ],
+  "result": {
+    "count": 2,
+    "id": "minecraft:birch_planks"
+  }
+}

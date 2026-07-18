@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "tide:reclamation/polished_andesite",
+  "ingredients": [
+    "minecraft:polished_andesite_stairs",
+    "minecraft:polished_andesite_stairs"
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:polished_andesite"
+  }
+}

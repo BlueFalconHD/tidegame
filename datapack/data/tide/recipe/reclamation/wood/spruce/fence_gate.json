@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "tide:reclamation/spruce_planks",
+  "ingredients": [
+    "minecraft:spruce_fence_gate"
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:spruce_planks"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "tide:reclamation/red_sandstone",
+  "ingredients": [
+    "minecraft:red_sandstone_stairs",
+    "minecraft:red_sandstone_stairs"
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:red_sandstone"
+  }
+}

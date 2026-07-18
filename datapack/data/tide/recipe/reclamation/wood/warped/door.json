@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "tide:reclamation/warped_planks",
+  "ingredients": [
+    "minecraft:warped_door",
+    "minecraft:warped_door"
+  ],
+  "result": {
+    "count": 3,
+    "id": "minecraft:warped_planks"
+  }
+}

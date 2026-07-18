@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "tide:reclamation/iron_nugget",
+  "ingredients": [
+    "minecraft:iron_bars",
+    "minecraft:iron_bars",
+    "minecraft:iron_bars",
+    "minecraft:iron_bars"
+  ],
+  "result": {
+    "count": 3,
+    "id": "minecraft:iron_nugget"
+  }
+}

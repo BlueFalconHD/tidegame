@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "tide:reclamation/cobblestone",
+  "ingredients": [
+    "minecraft:cobblestone_slab",
+    "minecraft:cobblestone_slab",
+    "minecraft:cobblestone_slab"
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:cobblestone"
+  }
+}

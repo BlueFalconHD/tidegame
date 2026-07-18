@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "tide:reclamation/oak_planks",
+  "ingredients": [
+    "minecraft:oak_sign",
+    "minecraft:oak_sign"
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:oak_planks"
+  }
+}

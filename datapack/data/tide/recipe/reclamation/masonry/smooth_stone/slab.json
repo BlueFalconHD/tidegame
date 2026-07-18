@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "tide:reclamation/smooth_stone",
+  "ingredients": [
+    "minecraft:smooth_stone_slab",
+    "minecraft:smooth_stone_slab",
+    "minecraft:smooth_stone_slab"
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:smooth_stone"
+  }
+}

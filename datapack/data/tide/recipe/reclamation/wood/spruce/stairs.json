@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "tide:reclamation/spruce_planks",
+  "ingredients": [
+    "minecraft:spruce_stairs",
+    "minecraft:spruce_stairs"
+  ],
+  "result": {
+    "count": 2,
+    "id": "minecraft:spruce_planks"
+  }
+}

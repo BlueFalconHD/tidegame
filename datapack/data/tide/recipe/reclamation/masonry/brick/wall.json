@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "tide:reclamation/bricks",
+  "ingredients": [
+    "minecraft:brick_wall",
+    "minecraft:brick_wall"
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:bricks"
+  }
+}

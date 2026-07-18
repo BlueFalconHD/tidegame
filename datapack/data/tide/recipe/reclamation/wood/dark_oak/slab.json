@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "tide:reclamation/dark_oak_planks",
+  "ingredients": [
+    "minecraft:dark_oak_slab",
+    "minecraft:dark_oak_slab",
+    "minecraft:dark_oak_slab"
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:dark_oak_planks"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "tide:reclamation/acacia_planks",
+  "ingredients": [
+    "minecraft:acacia_sign",
+    "minecraft:acacia_sign"
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:acacia_planks"
+  }
+}

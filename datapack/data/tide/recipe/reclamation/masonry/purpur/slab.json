@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "tide:reclamation/purpur_block",
+  "ingredients": [
+    "minecraft:purpur_slab",
+    "minecraft:purpur_slab",
+    "minecraft:purpur_slab"
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:purpur_block"
+  }
+}

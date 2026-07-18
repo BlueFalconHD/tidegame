@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "tide:reclamation/mangrove_planks",
+  "ingredients": [
+    "minecraft:mangrove_sign",
+    "minecraft:mangrove_sign"
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:mangrove_planks"
+  }
+}

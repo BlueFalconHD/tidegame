@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "tide:reclamation/prismarine",
+  "ingredients": [
+    "minecraft:prismarine_stairs",
+    "minecraft:prismarine_stairs"
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:prismarine"
+  }
+}

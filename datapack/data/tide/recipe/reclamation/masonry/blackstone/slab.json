@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "tide:reclamation/blackstone",
+  "ingredients": [
+    "minecraft:blackstone_slab",
+    "minecraft:blackstone_slab",
+    "minecraft:blackstone_slab"
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:blackstone"
+  }
+}

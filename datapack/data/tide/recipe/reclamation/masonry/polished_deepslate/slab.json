@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "tide:reclamation/polished_deepslate",
+  "ingredients": [
+    "minecraft:polished_deepslate_slab",
+    "minecraft:polished_deepslate_slab",
+    "minecraft:polished_deepslate_slab"
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:polished_deepslate"
+  }
+}

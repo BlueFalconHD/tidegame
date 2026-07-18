@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "tide:reclamation/diorite",
+  "ingredients": [
+    "minecraft:diorite_slab",
+    "minecraft:diorite_slab",
+    "minecraft:diorite_slab"
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:diorite"
+  }
+}

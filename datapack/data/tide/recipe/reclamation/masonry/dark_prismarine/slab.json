@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "tide:reclamation/dark_prismarine",
+  "ingredients": [
+    "minecraft:dark_prismarine_slab",
+    "minecraft:dark_prismarine_slab",
+    "minecraft:dark_prismarine_slab"
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:dark_prismarine"
+  }
+}

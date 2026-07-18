@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "tide:reclamation/jungle_planks",
+  "ingredients": [
+    "minecraft:jungle_slab",
+    "minecraft:jungle_slab",
+    "minecraft:jungle_slab"
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:jungle_planks"
+  }
+}

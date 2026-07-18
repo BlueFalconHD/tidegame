@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "tide:reclamation/polished_diorite",
+  "ingredients": [
+    "minecraft:polished_diorite_stairs",
+    "minecraft:polished_diorite_stairs"
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:polished_diorite"
+  }
+}

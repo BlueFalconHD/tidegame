@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "tide:reclamation/mossy_stone_bricks",
+  "ingredients": [
+    "minecraft:mossy_stone_brick_stairs",
+    "minecraft:mossy_stone_brick_stairs"
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:mossy_stone_bricks"
+  }
+}
