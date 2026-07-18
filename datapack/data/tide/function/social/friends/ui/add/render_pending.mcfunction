@@ -1,1 +1,1 @@
-$data modify storage tide:social ui.dialog.actions append value {label:{text:"$(name) — Request pending",color:"#F2F2F2"},tooltip:{text:"Waiting for a response",color:"#F2F2F2"},width:280}
+$data modify storage tide:social ui.dialog.actions append value {label:{text:"$(name) — Request pending",color:"#F2F2F2"},tooltip:{text:"Waiting for a response",color:"#F79317"},width:280}

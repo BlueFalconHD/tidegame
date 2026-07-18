@@ -1,1 +1,1 @@
-$data modify storage tide:social ui.dialog.actions append value {label:{text:"Sent to $(name) — Pending",color:"#F2F2F2"},tooltip:{text:"View or cancel this request",color:"#F2F2F2"},width:280,action:{type:"run_command",command:"trigger tide.social.cancel_prompt set $(action_target)"}}
+$data modify storage tide:social ui.dialog.actions append value {label:{text:"Sent to $(name) — Pending",color:"#F2F2F2"},tooltip:{text:"View or cancel this request",color:"#F79317"},width:280,action:{type:"run_command",command:"trigger tide.social.cancel_prompt set $(action_target)"}}
