@@ -1,6 +1,6 @@
 {
   "type": "minecraft:crafting_shapeless",
-  "category": "building",
+  "category": "misc",
   "group": "tide:reclamation/iron_nugget",
   "ingredients": [
     "minecraft:iron_trapdoor"

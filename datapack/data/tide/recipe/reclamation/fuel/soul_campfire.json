@@ -1,6 +1,6 @@
 {
   "type": "minecraft:crafting_shapeless",
-  "category": "building",
+  "category": "misc",
   "group": "tide:reclamation/charcoal",
   "ingredients": [
     "minecraft:soul_campfire"

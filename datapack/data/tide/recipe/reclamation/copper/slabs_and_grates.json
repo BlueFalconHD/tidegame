@@ -1,6 +1,6 @@
 {
   "type": "minecraft:crafting_shapeless",
-  "category": "building",
+  "category": "misc",
   "group": "tide:reclamation/copper_ingot",
   "ingredients": [
     "#tide:reclamation/copper/slabs_and_grates",
