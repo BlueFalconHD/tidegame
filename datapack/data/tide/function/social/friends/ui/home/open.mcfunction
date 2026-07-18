@@ -11,7 +11,7 @@ data modify storage tide:social scratch.home set value {}
 execute store result storage tide:social scratch.home.friends int 1 run scoreboard players get #social_friend_count tide.social.tmp
 execute store result storage tide:social scratch.home.requests int 1 run scoreboard players get #social_request_count tide.social.tmp
 
-data modify storage tide:social ui.dialog set value {type:"minecraft:multi_action",title:{text:"Friends",color:"#09C7E0"},body:[{type:"minecraft:plain_message",contents:{text:"Manage friends and friend requests.",color:"gray"},width:240}],can_close_with_escape:true,pause:false,after_action:"close",actions:[],columns:1,exit_action:{label:{text:"Close",color:"gray"},width:150}}
+data modify storage tide:social ui.dialog set value {type:"minecraft:multi_action",title:{text:"Friends",color:"#09C7E0"},body:[{type:"minecraft:plain_message",contents:{text:"Manage friends and friend requests.",color:"#F2F2F2"},width:240}],can_close_with_escape:true,pause:false,after_action:"close",actions:[],columns:1,exit_action:{label:{text:"Close",color:"#F2F2F2"},width:150}}
 function tide:social/friends/ui/home/render with storage tide:social scratch.home
 function tide:social/friends/ui/internal/show with storage tide:social ui
 

@@ -35,6 +35,9 @@ Use the following palette for player-facing chat, action-bar, and dialog text:
 - Debug: `#D0A8FF`
 - Warning: `#F79317`
 
+Dialog text uses brighter `#FF8FAF` error and `#F2F2F2` neutral variants for
+contrast against button textures.
+
 ## Snake Case
 Files/folders in datapacks MUST be named using snake_case. Lowercase letters, numbers, and underscores ONLY!
 - NO:  MyFunction.mcfunction

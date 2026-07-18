@@ -1,1 +1,1 @@
-$data modify storage tide:social ui.dialog.actions append value {label:{text:"Remove Friend",color:"#D94286"},tooltip:{text:"Remove $(name) from your friends",color:"gray"},width:240,action:{type:"run_command",command:"trigger tide.social.remove_confirm set $(action_target)"}}
+$data modify storage tide:social ui.dialog.actions append value {label:{text:"Remove Friend",color:"#FF8FAF"},tooltip:{text:"Remove $(name) from your friends",color:"#F2F2F2"},width:240,action:{type:"run_command",command:"trigger tide.social.remove_confirm set $(action_target)"}}

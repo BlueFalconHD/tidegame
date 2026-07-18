@@ -9,7 +9,7 @@
             "type": "minecraft:plain_message",
             "contents": {
                 "text": "No destinations are available yet.",
-                "color": "gray"
+                "color": "#F2F2F2"
             }
         }
     ],
@@ -18,7 +18,7 @@
     "action": {
         "label": {
             "text": "Never mind",
-            "color": "gray"
+            "color": "#F2F2F2"
         }
     }
 }
