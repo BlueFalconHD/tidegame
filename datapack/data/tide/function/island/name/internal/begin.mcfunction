@@ -7,10 +7,7 @@ execute unless score #name_levels tide.island.tmp matches 1.. unless entity @a[t
 
 inventory @a[tag=tide.island.name.source,limit=1] close
 clear @a[tag=tide.island.name.source,limit=1] minecraft:name_tag[minecraft:custom_data~{tide:{island_name_token:true}}]
-scoreboard players set #name_token_given tide.island.tmp 0
-execute store result score #name_token_given tide.island.tmp run loot give @a[tag=tide.island.name.source,limit=1] loot tide:island/name/token
-execute unless score #name_token_given tide.island.tmp matches 1 run title @a[tag=tide.island.name.source,limit=1] actionbar {"text":"Make room in your inventory first.","color":"#D94286"}
-execute unless score #name_token_given tide.island.tmp matches 1 run return fail
+loot replace entity @a[tag=tide.island.name.source,limit=1] player.cursor loot tide:island/name/token
 
 tag @a[tag=tide.island.name.source,limit=1] add tide.island.renaming
 
