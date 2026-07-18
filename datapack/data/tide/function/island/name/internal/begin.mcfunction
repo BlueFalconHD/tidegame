@@ -7,12 +7,12 @@ execute unless score #name_levels tide.island.tmp matches 1.. unless entity @a[t
 
 inventory @a[tag=tide.island.name.source,limit=1] close
 clear @a[tag=tide.island.name.source,limit=1] minecraft:name_tag[minecraft:custom_data~{tide:{island_name_token:true}}]
-loot replace entity @a[tag=tide.island.name.source,limit=1] player.cursor loot tide:island/name/token
 
 tag @a[tag=tide.island.name.source,limit=1] add tide.island.renaming
 
 # Tide owns this GUI anvil in the already-forceloaded registry chunk.
 execute in minecraft:overworld run setblock 1 -64 0 minecraft:anvil
 execute in minecraft:overworld positioned 1 -64 0 run inventory @a[tag=tide.island.name.source,limit=1] block ~ ~ ~ Rename Island
+loot replace entity @a[tag=tide.island.name.source,limit=1] player.cursor loot tide:island/name/token
 title @a[tag=tide.island.name.source,limit=1] actionbar {"text":"Rename the name tag and take the result (costs 1 level).","color":"#E0CA8E"}
 return 1
