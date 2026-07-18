@@ -2,3 +2,4 @@ its_cragi - building
 AltonicKeys - building
 JulianButJava - building
 BlueFalconHDPC - idea + code
+SchrodingerCubed - testing

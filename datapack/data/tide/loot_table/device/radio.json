@@ -1,0 +1,51 @@
+{
+  "type": "minecraft:command",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:paper",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_name": {
+                  "text": "Field Radio",
+                  "color": "#F2F2F2",
+                  "italic": false
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Use to open Friends.",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "Sneak + Use to place.",
+                    "color": "dark_gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:item_model": "tide:radio",
+                "minecraft:max_stack_size": 1,
+                "minecraft:consumable": {
+                  "consume_seconds": 3600.0,
+                  "animation": "none",
+                  "sound": "minecraft:intentionally_empty",
+                  "has_consume_particles": false
+                },
+                "minecraft:custom_data": {
+                  "tide": {
+                    "radio": true
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
