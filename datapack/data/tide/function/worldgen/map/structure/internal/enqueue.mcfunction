@@ -15,6 +15,8 @@ execute if data storage tide:chunkload request.template_check if entity @s[tag=t
 execute if data storage tide:chunkload request.template_check if entity @s[tag=tide.worldgen.map.outpost] run function tide:worldgen/map/structure/internal/include_template_check
 execute if data storage tide:chunkload request.template_check if entity @s[tag=tide.worldgen.map.abandoned_raft] run function tide:worldgen/map/structure/internal/include_template_check
 execute if data storage tide:chunkload request.template_check if entity @s[tag=tide.worldgen.map.buoy] run function tide:worldgen/map/structure/internal/include_template_check
+execute if data storage tide:chunkload request.template_check if entity @s[tag=tide.worldgen.map.reef] run function tide:worldgen/map/structure/internal/include_template_check
+execute if data storage tide:chunkload request.template_check if entity @s[tag=tide.worldgen.map.shipwreck] run function tide:worldgen/map/structure/internal/include_template_check
 
 execute unless data storage tide:chunkload request.corner store result storage tide:chunkload request.x int 1 run scoreboard players get @s tide.worldgen.map.place.x
 execute unless data storage tide:chunkload request.corner store result storage tide:chunkload request.z int 1 run scoreboard players get @s tide.worldgen.map.place.z
