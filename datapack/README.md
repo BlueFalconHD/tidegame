@@ -24,6 +24,17 @@ request format, callback behavior, limits, and operational commands.
 
 # Tips
 
+## Message Colors
+
+Use the following palette for player-facing chat, action-bar, and dialog text:
+
+- Error: `#D94286`
+- Success: `#E0CA8E`
+- Neutral: `gray`
+- Emphasis: `#09C7E0`
+- Debug: `#D0A8FF`
+- Warning: `#F79317`
+
 ## Snake Case
 Files/folders in datapacks MUST be named using snake_case. Lowercase letters, numbers, and underscores ONLY!
 - NO:  MyFunction.mcfunction

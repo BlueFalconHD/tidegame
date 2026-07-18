@@ -1,1 +1,1 @@
-$data modify storage tide:social ui.dialog.actions append value {label:{text:"Incoming from $(name)",color:"green"},tooltip:{text:"Accept or decline this request"},width:280,action:{type:"run_command",command:"trigger tide.social.respond set $(action_target)"}}
+$data modify storage tide:social ui.dialog.actions append value {label:{text:"Incoming from $(name)",color:"#F79317"},tooltip:{text:"Accept or decline this request",color:"gray"},width:280,action:{type:"run_command",command:"trigger tide.social.respond set $(action_target)"}}

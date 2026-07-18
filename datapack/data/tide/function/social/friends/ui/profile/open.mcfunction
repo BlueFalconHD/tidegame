@@ -10,13 +10,13 @@ execute unless score #social_friend_exists tide.social.tmp matches 1 run tellraw
 execute unless score #social_friend_exists tide.social.tmp matches 1 run return fail
 
 function tide:social/friends/ui/internal/prepare_viewed
-data modify storage tide:social ui.dialog set value {type:"minecraft:multi_action",title:{text:"Friend",color:"aqua"},body:[],can_close_with_escape:true,pause:false,after_action:"close",actions:[],columns:1,exit_action:{label:{text:"Back"},width:150,action:{type:"run_command",command:"trigger tide.social.menu set 1"}}}
+data modify storage tide:social ui.dialog set value {type:"minecraft:multi_action",title:{text:"Friend",color:"#09C7E0"},body:[],can_close_with_escape:true,pause:false,after_action:"close",actions:[],columns:1,exit_action:{label:{text:"Back",color:"gray"},width:150,action:{type:"run_command",command:"trigger tide.social.menu set 1"}}}
 function tide:social/friends/ui/profile/render_title with storage tide:social scratch.viewed
-execute if data storage tide:social scratch.viewed{online:1b} run data modify storage tide:social ui.dialog.body append value {type:"minecraft:plain_message",contents:{text:"● Online",color:"green"},width:260}
+execute if data storage tide:social scratch.viewed{online:1b} run data modify storage tide:social ui.dialog.body append value {type:"minecraft:plain_message",contents:{text:"● Online",color:"#E0CA8E"},width:260}
 execute unless data storage tide:social scratch.viewed{online:1b} run data modify storage tide:social ui.dialog.body append value {type:"minecraft:plain_message",contents:{text:"○ Offline",color:"gray"},width:260}
 execute if data storage tide:social scratch.viewed{has_island:1b} run function tide:social/friends/ui/profile/render_membership with storage tide:social scratch.viewed
 execute unless data storage tide:social scratch.viewed{has_island:1b} run data modify storage tide:social ui.dialog.body append value {type:"minecraft:plain_message",contents:{text:"Member of: No island",color:"gray"},width:260}
-execute if data storage tide:social scratch.viewed{online:1b} run data modify storage tide:social ui.dialog.body append value {type:"minecraft:plain_message",contents:{text:"Current location: Open Ocean",color:"aqua"},width:260}
+execute if data storage tide:social scratch.viewed{online:1b} run data modify storage tide:social ui.dialog.body append value {type:"minecraft:plain_message",contents:{text:"Current location: Open Ocean",color:"#09C7E0"},width:260}
 function tide:social/friends/ui/profile/render_remove with storage tide:social scratch.viewed
 
 function tide:social/friends/ui/internal/show with storage tide:social ui

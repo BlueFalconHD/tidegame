@@ -1,1 +1,1 @@
-$data modify storage tide:social ui.dialog.actions append value {label:{text:"$(name)",color:"aqua"},tooltip:{text:"Send a friend request"},width:280,action:{type:"run_command",command:"trigger tide.social.request set $(action_target)"}}
+$data modify storage tide:social ui.dialog.actions append value {label:{text:"$(name)",color:"#09C7E0"},tooltip:{text:"Send a friend request",color:"gray"},width:280,action:{type:"run_command",command:"trigger tide.social.request set $(action_target)"}}

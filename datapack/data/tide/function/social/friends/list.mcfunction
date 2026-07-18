@@ -5,7 +5,7 @@ scoreboard players operation #social_viewer tide.social.tmp = @s tide.identifier
 scoreboard players set #social_listed tide.social.tmp 0
 data modify storage tide:social scratch.queue set from storage tide:social friends
 
-tellraw @s {"text":"Friends","color":"aqua","bold":true}
+tellraw @s {"text":"Friends","color":"#09C7E0","bold":true}
 function tide:social/friends/internal/list/next
 execute unless score #social_listed tide.social.tmp matches 1.. run tellraw @s {"text":"  No friends yet.","color":"gray"}
 

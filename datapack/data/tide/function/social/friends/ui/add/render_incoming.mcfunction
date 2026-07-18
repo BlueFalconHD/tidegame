@@ -1,1 +1,1 @@
-$data modify storage tide:social ui.dialog.actions append value {label:{text:"$(name) — Respond",color:"green"},tooltip:{text:"This player sent you a request"},width:280,action:{type:"run_command",command:"trigger tide.social.respond set $(action_target)"}}
+$data modify storage tide:social ui.dialog.actions append value {label:{text:"$(name) — Respond",color:"#F79317"},tooltip:{text:"This player sent you a request",color:"gray"},width:280,action:{type:"run_command",command:"trigger tide.social.respond set $(action_target)"}}

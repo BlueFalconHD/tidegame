@@ -51,7 +51,7 @@ execute store result score #interaction_created tide.raft.tmp run function tide:
 execute unless score #interaction_created tide.raft.tmp matches 1 as @e[type=minecraft:marker,tag=tide.island.registry] if score @s tide.identifier.island = #raft_island tide.identifier.island run function tide:island/raft/internal/unregister_island
 execute unless score #interaction_created tide.raft.tmp matches 1 run return run function tide:island/raft/internal/reject/interaction
 
-title @a[tag=tide.raft.placer,limit=1] actionbar [{"text":"Raft deployed. Punch to pick up.","color":"aqua"}]
+title @a[tag=tide.raft.placer,limit=1] actionbar [{"text":"Raft deployed. Punch to pick up.","color":"#E0CA8E"}]
 playsound minecraft:entity.boat.paddle_water ambient @a[tag=tide.raft.placer,limit=1] ~ ~ ~ 0.8 1.0
 
 return 1

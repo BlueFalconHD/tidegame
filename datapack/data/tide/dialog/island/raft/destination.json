@@ -2,7 +2,7 @@
     "type": "minecraft:notice",
     "title": {
         "text": "Choose a Destination",
-        "color": "aqua"
+        "color": "#09C7E0"
     },
     "body": [
         {
@@ -17,7 +17,8 @@
     "pause": false,
     "action": {
         "label": {
-            "text": "Never mind"
+            "text": "Never mind",
+            "color": "gray"
         }
     }
 }

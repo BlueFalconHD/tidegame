@@ -18,5 +18,5 @@ execute as @e[type=minecraft:marker,tag=tide.worldgen.map.pending,tag=tide.world
 execute as @e[type=minecraft:marker,tag=tide.worldgen.map.pending,tag=tide.worldgen.map.abandoned_raft] run function tide:worldgen/map/layout/candidate/start
 execute as @e[type=minecraft:marker,tag=tide.worldgen.map.pending,tag=tide.worldgen.map.buoy] run function tide:worldgen/map/layout/candidate/start
 
-execute if entity @e[type=minecraft:marker,tag=tide.worldgen.map.failed] run tellraw @a {text:"Tide map layout could not place every structure.",color:"red"}
+execute if entity @e[type=minecraft:marker,tag=tide.worldgen.map.failed] run tellraw @a {text:"Tide map layout could not place every structure.",color:"#D94286"}
 return 1

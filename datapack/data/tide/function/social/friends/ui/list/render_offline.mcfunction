@@ -1,1 +1,1 @@
-$data modify storage tide:social ui.dialog.actions append value {label:{text:"○ $(name)",color:"gray"},tooltip:{text:"Offline"},width:280,action:{type:"run_command",command:"trigger tide.social.profile set $(action_target)"}}
+$data modify storage tide:social ui.dialog.actions append value {label:{text:"○ $(name)",color:"gray"},tooltip:{text:"Offline",color:"gray"},width:280,action:{type:"run_command",command:"trigger tide.social.profile set $(action_target)"}}

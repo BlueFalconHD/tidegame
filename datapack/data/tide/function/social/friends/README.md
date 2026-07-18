@@ -22,3 +22,7 @@ the two IDs are friends and `0` otherwise.
 The trigger objectives mirror those operations Triggers encode their target as 
 `player ID + 1`. Until another UI opens it, players can use `/trigger tide.social.open` 
 to display that menu.
+
+The dialog UI shows `Open Ocean` as the temporary location for online friends.
+Offline friends do not display a current location. Profiles show membership and
+current location separately.

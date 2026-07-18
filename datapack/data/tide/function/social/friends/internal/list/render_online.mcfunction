@@ -1,1 +1,1 @@
-$tellraw @s [{"text":"  • ","color":"dark_gray"},{"selector":"@a[tag=tide.social.list_target,limit=1]","color":"aqua"},{"text":" (online) ","color":"green"},{"text":"[Remove]","color":"red","click_event":{"action":"run_command","command":"/trigger tide.social.remove set $(target)"}}]
+$tellraw @s [{"text":"  • ","color":"dark_gray"},{"selector":"@a[tag=tide.social.list_target,limit=1]","color":"#09C7E0"},{"text":" (online) ","color":"#E0CA8E"},{"text":"[Remove]","color":"#D94286","click_event":{"action":"run_command","command":"/trigger tide.social.remove set $(target)"}}]

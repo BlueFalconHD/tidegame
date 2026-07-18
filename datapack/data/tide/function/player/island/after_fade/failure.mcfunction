@@ -4,6 +4,6 @@ execute in minecraft:overworld as @e[type=minecraft:marker,tag=tide.island.regis
 tag @s remove tide.island.has_island
 scoreboard players reset @s tide.identifier.island
 scoreboard players set @s tide.player.island.state 0
-tellraw @s {"text":"Your island could not be generated.","color":"red"}
+tellraw @s {"text":"Your island could not be generated.","color":"#D94286"}
 
 return 1

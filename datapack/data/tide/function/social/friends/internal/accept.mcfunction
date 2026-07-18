@@ -7,12 +7,12 @@ scoreboard players remove #social_source tide.social.tmp 1
 scoreboard players operation #social_target tide.social.tmp = @s tide.identifier.player
 scoreboard players reset @s tide.social.accept
 
-execute unless score #social_source tide.social.tmp matches 0.. run tellraw @s {"text":"Invalid friend request.","color":"red"}
+execute unless score #social_source tide.social.tmp matches 0.. run tellraw @s {"text":"Invalid friend request.","color":"#D94286"}
 execute unless score #social_source tide.social.tmp matches 0.. run return fail
 
 function tide:social/friends/internal/prepare_request
 execute store result score #social_request_exists tide.social.tmp run function tide:social/friends/internal/request_exists with storage tide:social scratch.request
-execute unless score #social_request_exists tide.social.tmp matches 1 run tellraw @s {"text":"That friend request no longer exists.","color":"red"}
+execute unless score #social_request_exists tide.social.tmp matches 1 run tellraw @s {"text":"That friend request no longer exists.","color":"#D94286"}
 execute unless score #social_request_exists tide.social.tmp matches 1 run return fail
 
 function tide:social/friends/internal/prepare_pair
@@ -22,7 +22,7 @@ execute if score #social_friend_exists tide.social.tmp matches 1 run function ti
 
 tag @a remove tide.social.actor
 tag @s add tide.social.actor
-execute as @a if score @s tide.identifier.player = #social_source tide.social.tmp run tellraw @s [{"selector":"@a[tag=tide.social.actor,limit=1]","color":"#1FDB83"},{"text":" accepted your friend request.","color":"gray"}]
+execute as @a if score @s tide.identifier.player = #social_source tide.social.tmp run tellraw @s [{"selector":"@a[tag=tide.social.actor,limit=1]","color":"#09C7E0"},{"text":" accepted your friend request.","color":"gray"}]
 tag @s remove tide.social.actor
-tellraw @s {"text":"Friend request accepted.","color":"#1FDB83"}
+tellraw @s {"text":"Friend request accepted.","color":"#E0CA8E"}
 return 1

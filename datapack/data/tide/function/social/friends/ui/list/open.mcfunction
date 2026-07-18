@@ -1,7 +1,7 @@
 scoreboard players operation #social_viewer tide.social.tmp = @s tide.identifier.player
 scoreboard players set #social_ui_entries tide.social.tmp 0
 
-data modify storage tide:social ui.dialog set value {type:"minecraft:multi_action",title:{text:"Friends",color:"aqua"},body:[{type:"minecraft:plain_message",contents:{text:"",color:"gray"},width:260}],can_close_with_escape:true,pause:false,after_action:"close",actions:[],columns:1,exit_action:{label:{text:"Back"},width:150,action:{type:"run_command",command:"trigger tide.social.menu set 4"}}}
+data modify storage tide:social ui.dialog set value {type:"minecraft:multi_action",title:{text:"Friends",color:"#09C7E0"},body:[{type:"minecraft:plain_message",contents:{text:"",color:"gray"},width:260}],can_close_with_escape:true,pause:false,after_action:"close",actions:[],columns:1,exit_action:{label:{text:"Back",color:"gray"},width:150,action:{type:"run_command",command:"trigger tide.social.menu set 4"}}}
 data modify storage tide:social scratch.queue set from storage tide:social friends
 function tide:social/friends/ui/list/next
 execute unless score #social_ui_entries tide.social.tmp matches 1.. run data modify storage tide:social ui.dialog.body append value {type:"minecraft:plain_message",contents:{text:"No friends yet.",color:"gray"},width:260}
