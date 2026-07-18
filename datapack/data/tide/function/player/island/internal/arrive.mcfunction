@@ -9,6 +9,7 @@ execute store result score #teleported tide.island.tmp run function tide:player/
 data remove storage tide:island scratch
 execute unless score #teleported tide.island.tmp matches 1 run return run function tide:player/island/internal/generation_failed
 
+execute at @s run function tide:world/location/update
 function tide:runtime/loading/stop
 scoreboard players set @s tide.player.island.state 2
 scoreboard players set @s tide.player.island.fade 10

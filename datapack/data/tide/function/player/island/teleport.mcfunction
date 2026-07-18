@@ -18,4 +18,5 @@ data remove storage tide:island scratch
 execute unless score #teleported tide.island.tmp matches 1 run tellraw @s {"text":"Unable to teleport to your island.","color":"#D94286"}
 execute unless score #teleported tide.island.tmp matches 1 run return fail
 
+execute at @s run function tide:world/location/update
 return 1

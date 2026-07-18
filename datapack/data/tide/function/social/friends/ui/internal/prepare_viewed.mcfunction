@@ -12,4 +12,5 @@ execute store result storage tide:social scratch.viewed.id int 1 run scoreboard 
 scoreboard players set #social_target_online tide.social.tmp 0
 execute as @a if score @s tide.identifier.player = #social_target tide.social.tmp run scoreboard players set #social_target_online tide.social.tmp 1
 execute store result storage tide:social scratch.viewed.online byte 1 run scoreboard players get #social_target_online tide.social.tmp
+execute as @a if score @s tide.identifier.player = #social_target tide.social.tmp at @s run function tide:social/friends/ui/internal/load_location
 execute if data storage tide:social scratch.viewed{has_island:1b} run function tide:social/friends/ui/internal/load_island_name

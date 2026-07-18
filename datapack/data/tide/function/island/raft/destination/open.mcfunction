@@ -15,8 +15,9 @@ scoreboard players reset @s tide.raft.travel.age
 scoreboard players operation #travel_viewer tide.identifier.player = @s tide.identifier.player
 scoreboard players set #travel_entries tide.raft.tmp 0
 
-data modify storage tide:raft ui.dialog set value {type:"minecraft:multi_action",title:{text:"Choose a Destination",color:"#F2F2F2"},body:[{type:"minecraft:plain_message",contents:{text:"Choose an island to visit.",color:"#F2F2F2"},width:280}],can_close_with_escape:true,pause:false,after_action:"close",actions:[],columns:1,exit_action:{label:{text:"Never mind",color:"#F2F2F2"},width:150,action:{type:"run_command",command:"trigger tide.raft.travel set -1"}}}
+data modify storage tide:raft ui.dialog set value {type:"minecraft:multi_action",title:{text:"Choose a Destination",color:"#F2F2F2"},body:[{type:"minecraft:plain_message",contents:{text:"Choose where to set sail.",color:"#F2F2F2"},width:280}],can_close_with_escape:true,pause:false,after_action:"close",actions:[],columns:1,exit_action:{label:{text:"Never mind",color:"#F2F2F2"},width:150,action:{type:"run_command",command:"trigger tide.raft.travel set -1"}}}
 data modify storage tide:raft scratch.seen set value []
+function tide:island/raft/destination/list/add_open_ocean
 function tide:island/raft/destination/list/add_home
 data modify storage tide:raft scratch.queue set from storage tide:social friends
 function tide:island/raft/destination/list/next

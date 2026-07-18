@@ -1,10 +1,13 @@
 scoreboard players operation #travel_destination tide.identifier.island = @s tide.raft.travel
-scoreboard players remove #travel_destination tide.identifier.island 1
 scoreboard players reset @s tide.raft.travel
 
 execute unless entity @s[tag=tide.raft.travel.session] run return fail
 tag @s remove tide.raft.travel.session
 scoreboard players reset @s tide.raft.travel.age
+
+execute if score #travel_destination tide.identifier.island matches 1 run return run function tide:island/raft/ocean/select
+
+scoreboard players remove #travel_destination tide.identifier.island 2
 scoreboard players reset @s tide.raft.source
 
 execute unless score #travel_destination tide.identifier.island matches 0.. run title @s actionbar {"text":"That destination is invalid.","color":"#D94286"}
@@ -25,5 +28,4 @@ scoreboard players operation @s tide.raft.destination = #travel_destination tide
 tag @s add tide.raft.travel.departing
 scoreboard players set @s tide.raft.travel.age 0
 function tide:runtime/loading/start
-title @s actionbar {"text":"Preparing voyage…","color":"#E0CA8E"}
 return 1

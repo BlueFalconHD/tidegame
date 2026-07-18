@@ -33,6 +33,7 @@ execute as @a[tag=tide.raft.traveler,limit=1] at @e[type=minecraft:bamboo_raft,t
 tag @e[type=minecraft:bamboo_raft,tag=tide.raft.destination] remove tide.raft.destination
 
 execute if score #travel_teleported tide.raft.tmp matches 1 as @a[tag=tide.raft.traveler,limit=1,scores={tide.loading.state=1..2}] run function tide:runtime/loading/stop
+execute if score #travel_teleported tide.raft.tmp matches 1 as @a[tag=tide.raft.traveler,limit=1] at @s run function tide:world/location/update
 execute if score #travel_teleported tide.raft.tmp matches 1 as @a[tag=tide.raft.traveler,limit=1] run function tide:island/raft/destination/internal/cleanup
 execute if score #travel_teleported tide.raft.tmp matches 1 as @a[tag=tide.raft.traveler,limit=1] run title @s actionbar [{"text":"Arrived at ","color":"#F2F2F2"},{"nbt":"scratch.arrival_name","storage":"tide:raft","color":"#09C7E0"}]
 execute unless score #travel_teleported tide.raft.tmp matches 1 as @a[tag=tide.raft.traveler,limit=1] run title @s actionbar {"text":"The voyage could not be completed.","color":"#D94286"}

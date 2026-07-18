@@ -22,7 +22,8 @@ execute as @a[tag=tide.raft.travel.session,scores={tide.raft.travel=1..}] run fu
 scoreboard players add @a[tag=tide.raft.travel.session] tide.raft.travel.age 1
 execute as @a[tag=tide.raft.travel.session,scores={tide.raft.travel.age=1201..}] run function tide:island/raft/destination/internal/expire
 scoreboard players enable @a[tag=tide.raft.travel.session] tide.raft.travel
-execute as @a[tag=tide.raft.travel.departing,scores={tide.loading.state=2}] run function tide:island/raft/destination/depart
+execute as @a[tag=tide.raft.travel.departing,scores={tide.loading.state=2,tide.raft.destination=0..}] run function tide:island/raft/destination/depart
+execute as @a[tag=tide.raft.travel.departing,scores={tide.loading.state=2,tide.raft.destination=-1,tide.raft.travel.age=60..}] run function tide:island/raft/ocean/depart
 scoreboard players add @a[tag=tide.raft.travel.departing] tide.raft.travel.age 1
 scoreboard players add @a[tag=tide.raft.travel.pending] tide.raft.travel.age 1
 execute as @a[tag=tide.raft.travel.departing,scores={tide.raft.travel.age=6001..}] run function tide:island/raft/destination/internal/timeout

@@ -15,7 +15,7 @@ execute unless score #travel_owner_found tide.raft.tmp matches 1 run return 0
 data modify storage tide:raft scratch.destination.owner_name set from storage tide:raft scratch.owner.name
 
 scoreboard players operation #travel_action tide.raft.tmp = #travel_candidate tide.identifier.island
-scoreboard players add #travel_action tide.raft.tmp 1
+scoreboard players add #travel_action tide.raft.tmp 2
 execute store result storage tide:raft scratch.destination.action_target int 1 run scoreboard players get #travel_action tide.raft.tmp
 
 $data modify storage tide:raft scratch.seen append value {island:$(island)}

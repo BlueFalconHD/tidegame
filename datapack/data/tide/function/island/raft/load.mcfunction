@@ -9,8 +9,13 @@ scoreboard objectives add tide.raft.source dummy
 scoreboard objectives add tide.raft.destination dummy
 scoreboard objectives add tide.raft.travel trigger
 scoreboard objectives add tide.raft.travel.age dummy
+scoreboard objectives add tide.raft.ocean.x dummy
+scoreboard objectives add tide.raft.ocean.z dummy
+scoreboard objectives add tide.raft.ocean.yaw dummy
 scoreboard objectives add tide.raft.leaves minecraft.custom:minecraft.leave_game
 scoreboard objectives add tide.raft.seen_leaves dummy
+
+scoreboard players set .ocean_chunk_size tide.raft.tmp 16
 
 execute as @a[tag=tide.raft.travel.departing,scores={tide.loading.state=1..}] run function tide:runtime/loading/clear
 execute as @a[tag=tide.raft.travel.pending,scores={tide.loading.state=1..}] run function tide:runtime/loading/clear
