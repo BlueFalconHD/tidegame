@@ -1,0 +1,1 @@
+data modify storage tide:social ui.dialog.actions append value {label:[{text:"🐜 ",color:"#D0A8FF"},{text:" Debug",color:"#F2F2F2"}],tooltip:{text:"Open developer tools",color:"#D0A8FF"},width:240,action:{type:"run_command",command:"trigger tide.social.menu set 5"}}

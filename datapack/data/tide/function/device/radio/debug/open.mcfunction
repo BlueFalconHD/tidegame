@@ -1,0 +1,3 @@
+data modify storage tide:social ui.dialog set value {type:"minecraft:multi_action",title:{text:"Debug",color:"#F2F2F2"},body:[{type:"minecraft:plain_message",contents:{text:"Developer tools.",color:"#F2F2F2"},width:240}],can_close_with_escape:true,pause:false,after_action:"close",actions:[{label:{text:"Teleport to My Island",color:"#F2F2F2"},tooltip:{text:"Teleport to your island",color:"#09C7E0"},width:240,action:{type:"run_command",command:"function tide:player/island/teleport"}}],columns:1,exit_action:{label:{text:"Back",color:"#F2F2F2"},width:150,action:{type:"run_command",command:"trigger tide.social.menu set 4"}}}
+function tide:social/friends/ui/internal/show with storage tide:social ui
+return 1
