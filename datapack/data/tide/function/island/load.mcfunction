@@ -11,3 +11,5 @@ scoreboard players set .base_z tide.island.tmp 8192
 
 # All persistent island records live together in this always-loaded chunk.
 execute in minecraft:overworld run forceload add 0 0
+
+function tide:island/raft/load

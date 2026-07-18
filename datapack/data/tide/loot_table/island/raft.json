@@ -1,0 +1,55 @@
+{
+    "type": "minecraft:command",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:bamboo_raft",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_components",
+                            "components": {
+                                "minecraft:custom_name": {
+                                    "text": "Island Raft",
+                                    "color": "aqua",
+                                    "italic": false
+                                },
+                                "minecraft:lore": [
+                                    {
+                                        "text": "Deploy this on your island to open it",
+                                        "color": "gray",
+                                        "italic": false
+                                    },
+                                    {
+                                        "text": "to the outside world.",
+                                        "color": "gray",
+                                        "italic": false
+                                    },
+                                    {
+                                        "text": "Punch the deployed raft to pick it up.",
+                                        "color": "dark_gray",
+                                        "italic": false
+                                    }
+                                ],
+                                "minecraft:custom_data": {
+                                    "tide": {
+                                        "island_raft": true
+                                    }
+                                },
+                                "minecraft:entity_data": {
+                                    "id": "minecraft:bamboo_raft",
+                                    "Invulnerable": true,
+                                    "Tags": [
+                                        "tide.raft"
+                                    ]
+                                }
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
