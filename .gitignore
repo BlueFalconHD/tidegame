@@ -2,3 +2,4 @@ assets/OceanBG.sesx
 assets/*.xmp
 assets/Backup
 doc/
+tools/package_resource_pack.sh
