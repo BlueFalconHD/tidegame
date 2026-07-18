@@ -1,0 +1,3 @@
+$data modify storage tide:social ui.dialog.actions append value {label:{text:"Friends ($(friends))",color:"aqua"},tooltip:{text:"View your friends"},width:240,action:{type:"run_command",command:"trigger tide.social.menu set 1"}}
+$data modify storage tide:social ui.dialog.actions append value {label:{text:"Requests ($(requests))",color:"gold"},tooltip:{text:"View incoming and sent requests"},width:240,action:{type:"run_command",command:"trigger tide.social.menu set 2"}}
+data modify storage tide:social ui.dialog.actions append value {label:{text:"Add Friend",color:"green"},tooltip:{text:"Browse online players"},width:240,action:{type:"run_command",command:"trigger tide.social.menu set 3"}}

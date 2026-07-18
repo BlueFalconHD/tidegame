@@ -1,0 +1,1 @@
+$data modify storage tide:social ui.dialog.actions append value {label:{text:"● $(name) — Open Ocean",color:"green"},tooltip:{text:"Online — Current location: Open Ocean"},width:280,action:{type:"run_command",command:"trigger tide.social.profile set $(action_target)"}}
