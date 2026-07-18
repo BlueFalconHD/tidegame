@@ -28,7 +28,7 @@ scoreboard players operation #raft_island tide.identifier.island += #cell_x tide
 
 # The island must exist, be generated, and belong to the placing player.
 scoreboard players set #island_found tide.raft.tmp 0
-execute as @e[type=minecraft:marker,tag=tide.island.registry] if score @s tide.identifier.island = #raft_island tide.identifier.island if score @s tide.island.state matches 2 run scoreboard players set #island_found tide.raft.tmp 1
+execute as @e[type=minecraft:marker,tag=tide.island.registry,tag=!tide.island.destroying] if score @s tide.identifier.island = #raft_island tide.identifier.island if score @s tide.island.state matches 2 run scoreboard players set #island_found tide.raft.tmp 1
 execute unless score #island_found tide.raft.tmp matches 1 run return run function tide:island/raft/internal/reject/outside
 execute unless score #placer_island tide.identifier.island = #raft_island tide.identifier.island run return run function tide:island/raft/internal/reject/not_member
 
@@ -51,7 +51,7 @@ execute store result score #interaction_created tide.raft.tmp run function tide:
 execute unless score #interaction_created tide.raft.tmp matches 1 as @e[type=minecraft:marker,tag=tide.island.registry] if score @s tide.identifier.island = #raft_island tide.identifier.island run function tide:island/raft/internal/unregister_island
 execute unless score #interaction_created tide.raft.tmp matches 1 run return run function tide:island/raft/internal/reject/interaction
 
-title @a[tag=tide.raft.placer,limit=1] actionbar [{"text":"Raft deployed. Punch to pick up.","color":"#E0CA8E"}]
+title @a[tag=tide.raft.placer,limit=1] actionbar [{"text":"Raft deployed. Punch to pick up.","color":"#F2F2F2"}]
 playsound minecraft:entity.boat.paddle_water ambient @a[tag=tide.raft.placer,limit=1] ~ ~ ~ 0.8 1.0
 
 return 1

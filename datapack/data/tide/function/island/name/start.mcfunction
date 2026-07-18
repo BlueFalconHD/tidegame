@@ -11,7 +11,7 @@ scoreboard players set #name_rename_allowed tide.island.tmp 0
 
 tag @a remove tide.island.name.source
 tag @s add tide.island.name.source
-execute in minecraft:overworld as @e[type=minecraft:marker,tag=tide.island.registry] if score @s tide.identifier.island = #name_island tide.identifier.island if score @s tide.island.owner = #name_player tide.identifier.player run function tide:island/name/internal/begin
+execute in minecraft:overworld as @e[type=minecraft:marker,tag=tide.island.registry,tag=!tide.island.destroying] if score @s tide.identifier.island = #name_island tide.identifier.island if score @s tide.island.owner = #name_player tide.identifier.player run function tide:island/name/internal/begin
 tag @s remove tide.island.name.source
 
 execute unless score #name_rename_allowed tide.island.tmp matches 1 run title @s actionbar {"text":"Only the island owner can rename it.","color":"#D94286"}

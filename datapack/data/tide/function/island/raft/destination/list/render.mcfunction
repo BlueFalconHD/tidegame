@@ -1,0 +1,3 @@
+$data modify storage tide:raft ui.dialog.actions append value {label:[{type:"object",object:"player",player:"$(owner_name)",hat:true},{text:" $(owner_name) · ",color:"#F2F2F2"},{text:"",color:"#F2F2F2"}],tooltip:{text:"Travel to ",color:"#09C7E0",extra:[{text:""}]},width:280,action:{type:"run_command",command:"trigger tide.raft.travel set $(action_target)"}}
+data modify storage tide:raft ui.dialog.actions[-1].label[-1].text set from storage tide:raft scratch.destination.name
+data modify storage tide:raft ui.dialog.actions[-1].tooltip.extra[0].text set from storage tide:raft scratch.destination.name

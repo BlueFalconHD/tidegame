@@ -18,4 +18,4 @@ default to `<creator>'s Island` using `bukkit.lastKnownName`.
 - `2`: generated and ready
 - `3`: generation failed
 
-TODO: fix jank naming
+TODO: fix jank naming system

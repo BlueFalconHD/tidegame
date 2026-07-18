@@ -6,7 +6,7 @@ scoreboard players set #island_id tide.identifier.island -1
 scoreboard players operation #island_id tide.identifier.island = @s tide.identifier.island
 scoreboard players set #spawn_found tide.island.tmp 0
 data remove storage tide:island scratch
-execute in minecraft:overworld as @e[type=minecraft:marker,tag=tide.island.registry] if score @s tide.identifier.island = #island_id tide.identifier.island if score @s tide.island.state matches 2 store result score #spawn_found tide.island.tmp run function tide:island/internal/write_spawn
+execute in minecraft:overworld as @e[type=minecraft:marker,tag=tide.island.registry,tag=!tide.island.destroying] if score @s tide.identifier.island = #island_id tide.identifier.island if score @s tide.island.state matches 2 store result score #spawn_found tide.island.tmp run function tide:island/internal/write_spawn
 
 execute unless score #spawn_found tide.island.tmp matches 1 run data remove storage tide:island scratch
 execute unless score #spawn_found tide.island.tmp matches 1 run tellraw @s {"text":"Your island is not ready yet.","color":"#D94286"}

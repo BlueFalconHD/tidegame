@@ -2,15 +2,16 @@
     "type": "minecraft:notice",
     "title": {
         "text": "Choose a Destination",
-        "color": "#09C7E0"
+        "color": "#F2F2F2"
     },
     "body": [
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "text": "No destinations are available yet.",
+                "text": "No other raft-connected islands are available.",
                 "color": "#F2F2F2"
-            }
+            },
+            "width": 280
         }
     ],
     "can_close_with_escape": true,
@@ -19,6 +20,7 @@
         "label": {
             "text": "Never mind",
             "color": "#F2F2F2"
-        }
+        },
+        "width": 150
     }
 }

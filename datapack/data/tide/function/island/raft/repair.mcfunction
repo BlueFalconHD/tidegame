@@ -9,7 +9,7 @@ scoreboard players operation #repair_player tide.identifier.player = @s tide.ide
 
 data remove storage tide:chunkload request
 scoreboard players set #repair_prepared tide.raft.tmp 0
-execute in minecraft:overworld as @e[type=minecraft:marker,tag=tide.island.registry] if score @s tide.identifier.island = #repair_island tide.identifier.island store result score #repair_prepared tide.raft.tmp run function tide:island/raft/repair/internal/prepare
+execute in minecraft:overworld as @e[type=minecraft:marker,tag=tide.island.registry,tag=!tide.island.destroying] if score @s tide.identifier.island = #repair_island tide.identifier.island store result score #repair_prepared tide.raft.tmp run function tide:island/raft/repair/internal/prepare
 execute unless score #repair_prepared tide.raft.tmp matches 1 run tellraw @s {"text":"This island has no deployed raft state to repair.","color":"#F79317"}
 execute unless score #repair_prepared tide.raft.tmp matches 1 run return fail
 
