@@ -7,6 +7,8 @@ scoreboard objectives add tide.social.menu trigger
 scoreboard objectives add tide.social.profile trigger
 scoreboard objectives add tide.social.respond trigger
 scoreboard objectives add tide.social.remove_confirm trigger
+scoreboard objectives add tide.social.cancel_prompt trigger
+scoreboard objectives add tide.social.cancel trigger
 scoreboard objectives add tide.social.leaves minecraft.custom:minecraft.leave_game
 scoreboard objectives add tide.social.seen_leaves dummy
 scoreboard objectives add tide.social.tmp dummy

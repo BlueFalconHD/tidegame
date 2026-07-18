@@ -9,7 +9,7 @@ execute store result score #social_friend_exists tide.social.tmp run function ti
 execute unless score #social_friend_exists tide.social.tmp matches 1 run return fail
 
 function tide:social/friends/ui/internal/prepare_viewed
-data modify storage tide:social ui.dialog set value {type:"minecraft:confirmation",title:{text:"Remove Friend",color:"#FF8FAF"},body:[],can_close_with_escape:true,pause:false,after_action:"close",yes:{label:{text:"Remove",color:"#FF8FAF"},width:130},no:{label:{text:"Cancel",color:"#F2F2F2"},width:130}}
+data modify storage tide:social ui.dialog set value {type:"minecraft:confirmation",title:{text:"Remove Friend",color:"#F2F2F2"},body:[],can_close_with_escape:true,pause:false,after_action:"close",yes:{label:[{text:"✕ ",color:"#FF8FAF"},{text:"Remove",color:"#F2F2F2"}],width:130},no:{label:{text:"Cancel",color:"#F2F2F2"},width:130}}
 function tide:social/friends/ui/profile/render_remove_confirm with storage tide:social scratch.viewed
 function tide:social/friends/ui/internal/show with storage tide:social ui
 data remove storage tide:social scratch.viewed
