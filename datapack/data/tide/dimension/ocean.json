@@ -1,30 +1,11 @@
 {
     "type": "minecraft:overworld",
     "generator": {
-        "type": "minecraft:flat",
-        "settings": {
-            "biome": "minecraft:ocean",
-            "lakes": false,
-            "features": false,
-            "layers": [
-                {
-                    "height": 29,
-                    "block": "minecraft:air"
-                },
-                {
-                    "height": 1,
-                    "block": "minecraft:bedrock"
-                },
-                {
-                    "height": 5,
-                    "block": "minecraft:sand"
-                },
-                {
-                    "height": 28,
-                    "block": "minecraft:water"
-                }
-            ],
-            "structure_overrides": []
+        "type": "minecraft:noise",
+        "settings": "tide:ocean",
+        "biome_source": {
+            "type": "minecraft:fixed",
+            "biome": "tide:ocean"
         }
     }
 }
