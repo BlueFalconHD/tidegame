@@ -9,5 +9,4 @@ scoreboard players set @s tide.raft.destination -1
 tag @s add tide.raft.travel.departing
 scoreboard players set @s tide.raft.travel.age 0
 function tide:runtime/loading/start
-title @s actionbar {"text":"Charting a course to the open ocean…","color":"#E0CA8E"}
 return 1
