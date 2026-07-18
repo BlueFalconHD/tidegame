@@ -19,10 +19,12 @@ scoreboard players set .ocean_chunk_size tide.raft.tmp 16
 
 execute as @a[tag=tide.raft.travel.departing,scores={tide.loading.state=1..}] run function tide:runtime/loading/clear
 execute as @a[tag=tide.raft.travel.pending,scores={tide.loading.state=1..}] run function tide:runtime/loading/clear
+execute as @a[tag=tide.raft.ocean.settling,scores={tide.loading.state=1..}] run function tide:runtime/loading/clear
 tag @a remove tide.raft.travel.session
 tag @a remove tide.raft.travel.departing
 tag @a remove tide.raft.travel.pending
 tag @a remove tide.raft.traveler
+tag @a remove tide.raft.ocean.settling
 scoreboard players reset @a tide.raft.travel
 scoreboard players reset @a tide.raft.travel.age
 scoreboard players reset @a tide.raft.source

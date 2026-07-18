@@ -25,14 +25,15 @@ $execute as @e[type=minecraft:bamboo_raft,tag=tide.raft.ocean.available,sort=nea
 
 scoreboard players set #travel_teleported tide.raft.tmp 0
 execute as @a[tag=tide.raft.traveler,limit=1] at @e[type=minecraft:bamboo_raft,tag=tide.raft.ocean.available,sort=nearest,limit=1] store success score #travel_teleported tide.raft.tmp run tp @s ~ ~0.5 ~
-execute if score #travel_teleported tide.raft.tmp matches 1 as @a[tag=tide.raft.traveler,limit=1] at @s run ride @s mount @e[type=minecraft:bamboo_raft,tag=tide.raft.ocean.available,distance=..2,sort=nearest,limit=1]
+scoreboard players set #travel_mounted tide.raft.tmp 0
+execute if score #travel_teleported tide.raft.tmp matches 1 as @a[tag=tide.raft.traveler,limit=1] at @s store success score #travel_mounted tide.raft.tmp run ride @s mount @e[type=minecraft:bamboo_raft,tag=tide.raft.ocean.available,distance=..2,sort=nearest,limit=1]
 tag @e[type=minecraft:bamboo_raft,tag=tide.raft.ocean.available] remove tide.raft.ocean.available
 
-execute if score #travel_teleported tide.raft.tmp matches 1 as @a[tag=tide.raft.traveler,limit=1] at @s run function tide:world/location/update
-execute if score #travel_teleported tide.raft.tmp matches 1 as @a[tag=tide.raft.traveler,limit=1,scores={tide.loading.state=1..2}] run function tide:runtime/loading/stop
-execute if score #travel_teleported tide.raft.tmp matches 1 as @a[tag=tide.raft.traveler,limit=1] run function tide:island/raft/destination/internal/cleanup
-execute if score #travel_teleported tide.raft.tmp matches 1 as @a[tag=tide.raft.traveler,limit=1] run title @s actionbar {"text":"Arrived at the Open Ocean","color":"#09C7E0"}
-execute unless score #travel_teleported tide.raft.tmp matches 1 as @a[tag=tide.raft.traveler,limit=1] run title @s actionbar {"text":"The voyage could not be completed.","color":"#D94286"}
-execute unless score #travel_teleported tide.raft.tmp matches 1 as @a[tag=tide.raft.traveler,limit=1] run function tide:island/raft/destination/internal/expire
+execute if score #travel_mounted tide.raft.tmp matches 1 as @a[tag=tide.raft.traveler,limit=1] at @s run function tide:world/location/update
+execute if score #travel_mounted tide.raft.tmp matches 1 as @a[tag=tide.raft.traveler,limit=1] run function tide:island/raft/destination/internal/cleanup
+execute if score #travel_mounted tide.raft.tmp matches 1 as @a[tag=tide.raft.traveler,limit=1] run tag @s add tide.raft.ocean.settling
+execute if score #travel_mounted tide.raft.tmp matches 1 as @a[tag=tide.raft.traveler,limit=1] run scoreboard players set @s tide.raft.travel.age 0
+execute unless score #travel_mounted tide.raft.tmp matches 1 as @a[tag=tide.raft.traveler,limit=1] run title @s actionbar {"text":"The voyage could not be completed.","color":"#D94286"}
+execute unless score #travel_mounted tide.raft.tmp matches 1 as @a[tag=tide.raft.traveler,limit=1] run function tide:island/raft/destination/internal/expire
 tag @a remove tide.raft.traveler
 return 1

@@ -29,4 +29,7 @@ scoreboard players add @a[tag=tide.raft.travel.pending] tide.raft.travel.age 1
 execute as @a[tag=tide.raft.travel.departing,scores={tide.raft.travel.age=6001..}] run function tide:island/raft/destination/internal/timeout
 execute as @a[tag=tide.raft.travel.pending,scores={tide.raft.travel.age=6001..}] run function tide:island/raft/destination/internal/timeout
 
+scoreboard players add @a[tag=tide.raft.ocean.settling] tide.raft.travel.age 1
+execute as @a[tag=tide.raft.ocean.settling,scores={tide.raft.travel.age=10..}] run function tide:island/raft/ocean/finish_arrival
+
 execute as @e[type=minecraft:bamboo_raft,tag=tide.raft.registered] run data merge entity @s {Motion:[0.0d,0.0d,0.0d]}

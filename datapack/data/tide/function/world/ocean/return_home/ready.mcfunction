@@ -24,9 +24,9 @@ execute as @a[tag=tide.ocean.return.traveler,limit=1] at @e[type=minecraft:bambo
 tag @e[type=minecraft:bamboo_raft,tag=tide.ocean.return.raft] remove tide.ocean.return.raft
 
 execute if score #ocean_return_teleported tide.location.tmp matches 1 as @a[tag=tide.ocean.return.traveler,limit=1] at @s run function tide:world/location/update
-execute if score #ocean_return_teleported tide.location.tmp matches 1 as @a[tag=tide.ocean.return.traveler,limit=1,scores={tide.loading.state=1..2}] run function tide:runtime/loading/stop
-execute if score #ocean_return_teleported tide.location.tmp matches 1 as @a[tag=tide.ocean.return.traveler,limit=1] run function tide:world/ocean/return_home/internal/cleanup
-execute if score #ocean_return_teleported tide.location.tmp matches 1 as @a[tag=tide.ocean.return.traveler,limit=1] run title @s actionbar {"text":"Welcome home","color":"#E0CA8E"}
+execute if score #ocean_return_teleported tide.location.tmp matches 1 as @a[tag=tide.ocean.return.traveler,limit=1] run tag @s remove tide.ocean.return.pending
+execute if score #ocean_return_teleported tide.location.tmp matches 1 as @a[tag=tide.ocean.return.traveler,limit=1] run tag @s add tide.ocean.return.settling
+execute if score #ocean_return_teleported tide.location.tmp matches 1 as @a[tag=tide.ocean.return.traveler,limit=1] run scoreboard players set @s tide.area_transition 10
 execute unless score #ocean_return_teleported tide.location.tmp matches 1 as @a[tag=tide.ocean.return.traveler,limit=1] run function tide:world/ocean/return_home/fallback
 tag @a remove tide.ocean.return.traveler
 return 1
