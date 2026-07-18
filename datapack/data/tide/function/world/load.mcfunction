@@ -1,6 +1,3 @@
-function tide:world/gen/load
-
-
 # tide.area_transition
 # this indicates a player being transitioned to/from different areas, namely
 # their island, others' islands, and the open ocean
