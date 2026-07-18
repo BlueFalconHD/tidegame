@@ -3,3 +3,4 @@ assets/*.xmp
 assets/Backup
 doc/
 tools/package_resource_pack.sh
+tools/generate_loading_screen_assets.sh
