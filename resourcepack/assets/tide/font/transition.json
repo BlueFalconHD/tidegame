@@ -1,0 +1,13 @@
+{
+    "providers": [
+        {
+            "type": "bitmap",
+            "file": "tide:font/transition.png",
+            "ascent": 509,
+            "height": 1024,
+            "chars": [
+                "\ue000"
+            ]
+        }
+    ]
+}
