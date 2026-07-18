@@ -1,0 +1,18 @@
+[
+  {
+    "function": "minecraft:set_item",
+    "item": "minecraft:spruce_planks"
+  },
+  {
+    "function": "minecraft:set_count",
+    "count": 2
+  },
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "!minecraft:profile": {},
+      "!minecraft:note_block_sound": {},
+      "!minecraft:custom_name": {}
+    }
+  }
+]

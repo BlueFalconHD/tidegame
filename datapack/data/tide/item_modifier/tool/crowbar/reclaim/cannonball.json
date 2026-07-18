@@ -1,0 +1,18 @@
+[
+  {
+    "function": "minecraft:set_item",
+    "item": "minecraft:iron_nugget"
+  },
+  {
+    "function": "minecraft:set_count",
+    "count": 3
+  },
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "!minecraft:profile": {},
+      "!minecraft:note_block_sound": {},
+      "!minecraft:custom_name": {}
+    }
+  }
+]
