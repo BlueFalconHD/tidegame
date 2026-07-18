@@ -1,0 +1,1 @@
+$tellraw @s [{"text":"  • Player #","color":"dark_gray"},{"score":{"name":"#social_list_friend","objective":"tide.social.tmp"}},{"text":" (offline) ","color":"gray"},{"text":"[Remove]","color":"red","click_event":{"action":"run_command","command":"/trigger tide.social.remove set $(target)"}}]

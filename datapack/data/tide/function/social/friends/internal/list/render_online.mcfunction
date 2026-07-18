@@ -1,0 +1,1 @@
+$tellraw @s [{"text":"  • ","color":"dark_gray"},{"selector":"@a[tag=tide.social.list_target,limit=1]","color":"aqua"},{"text":" (online) ","color":"green"},{"text":"[Remove]","color":"red","click_event":{"action":"run_command","command":"/trigger tide.social.remove set $(target)"}}]

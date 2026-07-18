@@ -1,0 +1,1 @@
+$tellraw @a[tag=tide.social.viewer,limit=1] [{"text":"  • ","color":"dark_gray"},{"selector":"@s","color":"aqua"},{"text":"  "},{"text":"[Add friend]","color":"green","click_event":{"action":"run_command","command":"/trigger tide.social.request set $(target)"}}]
