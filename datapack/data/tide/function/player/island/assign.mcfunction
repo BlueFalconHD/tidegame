@@ -20,4 +20,5 @@ execute in minecraft:overworld as @e[type=minecraft:marker,tag=tide.island.regis
 execute unless score #enqueued tide.island.tmp matches 1 run function tide:player/island/internal/generation_failed
 execute unless score #enqueued tide.island.tmp matches 1 run return fail
 
+function tide:social/profile/sync
 return 1

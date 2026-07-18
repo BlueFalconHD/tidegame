@@ -14,7 +14,7 @@ data modify storage tide:social ui.dialog set value {type:"minecraft:multi_actio
 function tide:social/friends/ui/profile/render_title with storage tide:social scratch.viewed
 execute if data storage tide:social scratch.viewed{online:1b} run data modify storage tide:social ui.dialog.body append value {type:"minecraft:plain_message",contents:{text:"● Online",color:"#E0CA8E"},width:260}
 execute unless data storage tide:social scratch.viewed{online:1b} run data modify storage tide:social ui.dialog.body append value {type:"minecraft:plain_message",contents:{text:"○ Offline",color:"#F2F2F2"},width:260}
-execute if data storage tide:social scratch.viewed{has_island:1b} run function tide:social/friends/ui/profile/render_membership with storage tide:social scratch.viewed
+execute if data storage tide:social scratch.viewed{has_island:1b} run function tide:social/friends/ui/profile/render_membership
 execute unless data storage tide:social scratch.viewed{has_island:1b} run data modify storage tide:social ui.dialog.body append value {type:"minecraft:plain_message",contents:{text:"Member of: No island",color:"#F2F2F2"},width:260}
 execute if data storage tide:social scratch.viewed{online:1b} run data modify storage tide:social ui.dialog.body append value {type:"minecraft:plain_message",contents:{text:"Current location: Open Ocean",color:"#09C7E0"},width:260}
 function tide:social/friends/ui/profile/render_remove with storage tide:social scratch.viewed
