@@ -1,3 +1,3 @@
 {
-    "values": ["code:tick", "tide:runtime/tick", "tide:player/tick", "tide:social/tick", "tide:device/tick", "tide:island/tick", "tide:island/raft/tick", "tide:world/tick"]
+    "values": ["code:tick", "tide:runtime/tick", "tide:player/tick", "tide:social/tick", "tide:island/tick", "tide:item/tick", "tide:island/raft/tick", "tide:world/tick"]
 }

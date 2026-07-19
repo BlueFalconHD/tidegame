@@ -5,5 +5,5 @@ execute if score #social_menu tide.social.tmp matches 1 run return run function 
 execute if score #social_menu tide.social.tmp matches 2 run return run function tide:social/friends/ui/requests/open
 execute if score #social_menu tide.social.tmp matches 3 run return run function tide:social/friends/ui/add/open
 execute if score #social_menu tide.social.tmp matches 4 run return run function tide:social/friends/ui/home/open
-execute if score #social_menu tide.social.tmp matches 5 if entity @s[tag=tide.dev.debug] run return run function tide:device/radio/debug/open
+execute if score #social_menu tide.social.tmp matches 5 if entity @s[tag=tide.dev.debug] run return run function tide:social/friends/ui/debug/open
 return fail

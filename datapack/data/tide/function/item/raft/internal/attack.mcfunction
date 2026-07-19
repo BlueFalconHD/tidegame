@@ -1,0 +1,4 @@
+# Interaction entities record the attacking player in `attack` data and expose
+# that player through the `attacker` execute relation.
+execute at @s on attacker run function tide:item/raft/internal/try_pickup
+data remove entity @s attack

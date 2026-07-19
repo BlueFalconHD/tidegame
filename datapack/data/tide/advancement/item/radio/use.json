@@ -1,0 +1,18 @@
+{
+  "criteria": {
+    "use_radio": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "item": {
+          "items": "minecraft:paper",
+          "predicates": {
+            "minecraft:custom_data": "{tide:{radio:1b}}"
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "tide:item/radio/use"
+  }
+}

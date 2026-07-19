@@ -48,7 +48,7 @@
               },
               "modifier": {
                 "function": "minecraft:reference",
-                "name": "tide:tool/crowbar/reclaim/cannonball"
+                "name": "tide:item/crowbar/reclaim/cannonball"
               }
             },
             {
@@ -61,7 +61,7 @@
               },
               "modifier": {
                 "function": "minecraft:reference",
-                "name": "tide:tool/crowbar/reclaim/wooden_prop"
+                "name": "tide:item/crowbar/reclaim/wooden_prop"
               }
             },
             {
@@ -74,7 +74,7 @@
               },
               "modifier": {
                 "function": "minecraft:reference",
-                "name": "tide:tool/crowbar/reclaim/wooden_prop"
+                "name": "tide:item/crowbar/reclaim/wooden_prop"
               }
             },
             {
@@ -87,7 +87,7 @@
               },
               "modifier": {
                 "function": "minecraft:reference",
-                "name": "tide:tool/crowbar/reclaim/wooden_prop"
+                "name": "tide:item/crowbar/reclaim/wooden_prop"
               }
             },
             {
@@ -100,7 +100,7 @@
               },
               "modifier": {
                 "function": "minecraft:reference",
-                "name": "tide:tool/crowbar/reclaim/wooden_prop"
+                "name": "tide:item/crowbar/reclaim/wooden_prop"
               }
             },
             {
@@ -113,7 +113,7 @@
               },
               "modifier": {
                 "function": "minecraft:reference",
-                "name": "tide:tool/crowbar/reclaim/wooden_prop"
+                "name": "tide:item/crowbar/reclaim/wooden_prop"
               }
             },
             {
