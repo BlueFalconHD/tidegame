@@ -1,0 +1,52 @@
+{
+  "type": "minecraft:command",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:paper",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_name": {
+                  "text": "Tangled Fiber",
+                  "color": "#F2F2F2",
+                  "italic": false
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Knotted salvage. Needs breaking down at home.",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:item_model": "tide:salvage/fiber",
+                "minecraft:custom_data": {
+                  "tide": {
+                    "salvage": {
+                      "family": "fiber"
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:score",
+                "target": {
+                  "type": "minecraft:fixed",
+                  "name": "#fiber"
+                },
+                "score": "tide.salvage.tmp"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

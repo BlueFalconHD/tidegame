@@ -1,0 +1,1 @@
+execute positioned ~0.5 ~0.5 ~0.5 unless entity @e[type=minecraft:item_display,tag=tide.salvage.damage,distance=..0.1] run summon minecraft:item_display ~ ~ ~ {Tags:["tide.salvage.damage"],item_display:"none",shadow_radius:0f,transformation:{translation:[0f,0f,0f],left_rotation:[0f,0f,0f,1f],scale:[1.002f,1.002f,1.002f],right_rotation:[0f,0f,0f,1f]}}

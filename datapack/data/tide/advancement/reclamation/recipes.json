@@ -5,9 +5,9 @@
       "conditions": {
         "items": [
           {
-            "items": "minecraft:iron_pickaxe",
+            "items": "minecraft:breeze_rod",
             "predicates": {
-              "minecraft:custom_data": "{tide:{salvage_crowbar:1b}}"
+              "minecraft:custom_data": "{tide:{salvage_crowbar:1}}"
             }
           }
         ]

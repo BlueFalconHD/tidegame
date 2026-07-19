@@ -1,0 +1,9 @@
+execute if data block ~ ~ ~ profile.properties[{value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjI1MjNlMTVlOTk4NjM1NWExZjg1MWY0M2Y3NTBlZTNmMjNjODlhZTEyMzYzMWRhMjQxZjg3MmJhN2E3ODEifX19"}] run scoreboard players set #family tide.salvage.tmp 2
+execute if score #family tide.salvage.tmp matches 2 run return run function tide:item/crowbar/pry/resolve/tough
+
+execute if data block ~ ~ ~ profile.properties[{value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTJkZDdkODE4Y2JhNjUyYjAxY2YzNTBkMmIyYTFjZWVkZDRmNDZhY2FkMDViMmNlODFjM2Y4NzdlYWI3MTcifX19"}] run scoreboard players set #family tide.salvage.tmp 1
+execute if data block ~ ~ ~ profile.properties[{value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWYyMmI2YTNhMGYyNGJkZWVhYjJhNmFjZDliMWY1MmJiOTU5NGQ1ZjZiMWUyYzA1ZGRkYjIxOTQxMGM4In19fQ=="}] run scoreboard players set #family tide.salvage.tmp 1
+execute if data block ~ ~ ~ profile.properties[{value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODM1OGZiYTJmMWJkYzUxOWJhODVlNTM2NmJhYjhkZWY5YmJlNDA0ZWY2MzljMmUzYzY1NGQxMGExZDhkMyJ9fX0="}] run scoreboard players set #family tide.salvage.tmp 1
+execute if data block ~ ~ ~ profile.properties[{value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWM5NmJlNzg4NmViN2RmNzU1MjVhMzYzZTVmNTQ5NjI2YzIxMzg4ZjBmZGE5ODhhNmU4YmY0ODdhNTMifX19"}] run scoreboard players set #family tide.salvage.tmp 1
+execute if data block ~ ~ ~ profile.properties[{value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTZkMjEwY2M3ZTE2Zjc4NmVhNzIyOWY4Mjk1MTRhOTM2YTQ3NjZmYjIxNzg1ZjQ2NmIyZDM2NTM3MjcxYWRmIn19fQ=="}] run scoreboard players set #family tide.salvage.tmp 1
+execute if score #family tide.salvage.tmp matches 1 run return run function tide:item/crowbar/pry/resolve/soft
