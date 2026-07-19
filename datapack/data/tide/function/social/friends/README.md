@@ -20,5 +20,4 @@ function tide:social/friends/open
 the two IDs are friends and `0` otherwise.
 
 The trigger objectives mirror those operations Triggers encode their target as 
-`player ID + 1`. Until another UI opens it, players can use `/trigger tide.social.open` 
-to display that menu.
+`player ID + 1`.
