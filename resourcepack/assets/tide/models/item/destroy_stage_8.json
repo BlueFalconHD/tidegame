@@ -1,7 +1,0 @@
-{
-  "parent": "minecraft:block/cube_all",
-  "textures": {
-    "all": "minecraft:block/destroy_stage_8",
-    "particle": "minecraft:block/destroy_stage_8"
-  }
-}
