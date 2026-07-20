@@ -8,3 +8,4 @@ tools/generate_salvage.py
 tools/salvage_manifest.py
 tools/count_loc
 __pycache__/
+concepts/
