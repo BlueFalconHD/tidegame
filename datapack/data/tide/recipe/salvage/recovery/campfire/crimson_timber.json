@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:campfire_cooking",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.0,
+  "ingredient": "minecraft:guster_pottery_sherd",
+  "result": {
+    "count": 1,
+    "id": "minecraft:crimson_planks"
+  }
+}

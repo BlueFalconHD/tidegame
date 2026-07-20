@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:command",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:nautilus_shell",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_name": {
+                  "text": "Pearlescent Keepsake",
+                  "color": "#E0CA8E",
+                  "italic": false
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Small enough to have been carried for luck.",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "tide": {
+                    "treasure": "pearl"
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

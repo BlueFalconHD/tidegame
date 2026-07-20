@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:campfire_cooking",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.0,
+  "ingredient": "minecraft:flow_pottery_sherd",
+  "result": {
+    "count": 1,
+    "id": "minecraft:acacia_planks"
+  }
+}

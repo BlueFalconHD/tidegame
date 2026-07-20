@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "minecraft:plenty_pottery_sherd",
+  "result": {
+    "count": 1,
+    "id": "minecraft:polished_deepslate"
+  }
+}

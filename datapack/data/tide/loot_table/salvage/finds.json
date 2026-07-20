@@ -1,0 +1,40 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "tide:salvage/treasure/coin",
+          "weight": 72,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 1.0,
+                "max": 3.0
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "tide:salvage/treasure/sea_glass",
+          "weight": 18
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "tide:salvage/treasure/message_bottle",
+          "weight": 8
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "tide:salvage/treasure/pearl",
+          "weight": 2
+        }
+      ]
+    }
+  ]
+}

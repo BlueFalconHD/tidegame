@@ -1,0 +1,52 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "tide_radio",
+  "pattern": [
+    "ICI",
+    "RPR",
+    "IQI"
+  ],
+  "key": {
+    "I": "minecraft:iron_ingot",
+    "C": "minecraft:copper_ingot",
+    "R": "minecraft:redstone_block",
+    "P": "minecraft:paper",
+    "Q": "minecraft:quartz"
+  },
+  "result": {
+    "id": "minecraft:paper",
+    "components": {
+      "minecraft:item_name": {
+        "text": "Field Radio",
+        "color": "#F2F2F2",
+        "italic": false
+      },
+      "minecraft:lore": [
+        {
+          "text": "Use to open Friends.",
+          "color": "gray",
+          "italic": false
+        },
+        {
+          "text": "Sneak + Use to place.",
+          "color": "dark_gray",
+          "italic": false
+        }
+      ],
+      "minecraft:item_model": "tide:radio",
+      "minecraft:max_stack_size": 1,
+      "minecraft:consumable": {
+        "consume_seconds": 3600.0,
+        "animation": "none",
+        "sound": "minecraft:intentionally_empty",
+        "has_consume_particles": false
+      },
+      "minecraft:custom_data": {
+        "tide": {
+          "radio": true
+        }
+      }
+    }
+  }
+}

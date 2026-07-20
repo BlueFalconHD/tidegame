@@ -5,3 +5,4 @@ doc/
 tools/package_resource_pack.sh
 tools/generate_loading_screen_assets.sh
 tools/count_loc
+__pycache__/

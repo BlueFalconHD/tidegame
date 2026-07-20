@@ -1,0 +1,221 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        },
+        {
+          "condition": "minecraft:inverted",
+          "term": {
+            "condition": "minecraft:all_of",
+            "terms": [
+              {
+                "condition": "minecraft:location_check",
+                "predicate": {
+                  "dimension": "tide:ocean"
+                }
+              },
+              {
+                "condition": "minecraft:match_tool",
+                "predicate": {
+                  "items": "minecraft:breeze_rod",
+                  "predicates": {
+                    "minecraft:custom_data": "{tide:{crowbar:1b}}"
+                  }
+                }
+              },
+              {
+                "block": "minecraft:mossy_stone_bricks",
+                "condition": "minecraft:block_state_property"
+              }
+            ]
+          }
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:mossy_stone_bricks"
+        }
+      ],
+      "rolls": 1.0
+    },
+    {
+      "bonus_rolls": 0.0,
+      "conditions": [
+        {
+          "condition": "minecraft:location_check",
+          "predicate": {
+            "dimension": "tide:ocean"
+          }
+        },
+        {
+          "condition": "minecraft:match_tool",
+          "predicate": {
+            "items": "minecraft:breeze_rod",
+            "predicates": {
+              "minecraft:custom_data": "{tide:{crowbar:1b}}"
+            }
+          }
+        },
+        {
+          "block": "minecraft:mossy_stone_bricks",
+          "condition": "minecraft:block_state_property"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "conditions": [
+                {
+                  "condition": "minecraft:match_tool",
+                  "predicate": {
+                    "items": "minecraft:breeze_rod",
+                    "predicates": {
+                      "minecraft:custom_data": "{tide:{crowbar:1b,crowbar_tier:1b}}"
+                    }
+                  }
+                },
+                {
+                  "chance": 0.025,
+                  "condition": "minecraft:random_chance"
+                }
+              ],
+              "name": "minecraft:mossy_stone_bricks"
+            },
+            {
+              "type": "minecraft:item",
+              "conditions": [
+                {
+                  "condition": "minecraft:match_tool",
+                  "predicate": {
+                    "items": "minecraft:breeze_rod",
+                    "predicates": {
+                      "minecraft:custom_data": "{tide:{crowbar:1b,crowbar_tier:2b}}"
+                    }
+                  }
+                },
+                {
+                  "chance": 0.05,
+                  "condition": "minecraft:random_chance"
+                }
+              ],
+              "name": "minecraft:mossy_stone_bricks"
+            },
+            {
+              "type": "minecraft:item",
+              "conditions": [
+                {
+                  "condition": "minecraft:match_tool",
+                  "predicate": {
+                    "items": "minecraft:breeze_rod",
+                    "predicates": {
+                      "minecraft:custom_data": "{tide:{crowbar:1b,crowbar_tier:3b}}"
+                    }
+                  }
+                },
+                {
+                  "chance": 0.075,
+                  "condition": "minecraft:random_chance"
+                }
+              ],
+              "name": "minecraft:mossy_stone_bricks"
+            },
+            {
+              "type": "minecraft:item",
+              "conditions": [
+                {
+                  "condition": "minecraft:match_tool",
+                  "predicate": {
+                    "items": "minecraft:breeze_rod",
+                    "predicates": {
+                      "minecraft:custom_data": "{tide:{crowbar:1b,crowbar_tier:4b}}"
+                    }
+                  }
+                },
+                {
+                  "chance": 0.1,
+                  "condition": "minecraft:random_chance"
+                }
+              ],
+              "name": "minecraft:mossy_stone_bricks"
+            },
+            {
+              "type": "minecraft:item",
+              "conditions": [
+                {
+                  "condition": "minecraft:match_tool",
+                  "predicate": {
+                    "items": "minecraft:breeze_rod",
+                    "predicates": {
+                      "minecraft:custom_data": "{tide:{crowbar:1b,crowbar_tier:5b}}"
+                    }
+                  }
+                },
+                {
+                  "chance": 0.125,
+                  "condition": "minecraft:random_chance"
+                }
+              ],
+              "name": "minecraft:mossy_stone_bricks"
+            },
+            {
+              "type": "minecraft:loot_table",
+              "functions": [
+                {
+                  "add": false,
+                  "count": 1.0,
+                  "function": "minecraft:set_count"
+                }
+              ],
+              "value": "tide:salvage/material/stone"
+            }
+          ]
+        }
+      ],
+      "rolls": 1.0
+    },
+    {
+      "bonus_rolls": 0.0,
+      "conditions": [
+        {
+          "condition": "minecraft:location_check",
+          "predicate": {
+            "dimension": "tide:ocean"
+          }
+        },
+        {
+          "condition": "minecraft:match_tool",
+          "predicate": {
+            "items": "minecraft:breeze_rod",
+            "predicates": {
+              "minecraft:custom_data": "{tide:{crowbar:1b}}"
+            }
+          }
+        },
+        {
+          "block": "minecraft:mossy_stone_bricks",
+          "condition": "minecraft:block_state_property"
+        },
+        {
+          "chance": 0.022,
+          "condition": "minecraft:random_chance"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "tide:salvage/finds"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "minecraft:blocks/mossy_stone_bricks"
+}

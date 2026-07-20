@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "minecraft:mourner_pottery_sherd",
+  "result": {
+    "count": 1,
+    "id": "minecraft:diorite_wall"
+  }
+}

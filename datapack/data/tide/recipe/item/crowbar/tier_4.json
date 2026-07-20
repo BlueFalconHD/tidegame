@@ -1,0 +1,127 @@
+{
+  "type": "minecraft:crafting_transmute",
+  "category": "equipment",
+  "group": "tide_crowbar_upgrade",
+  "input": "minecraft:breeze_rod",
+  "material": "minecraft:diamond",
+  "result": {
+    "id": "minecraft:breeze_rod",
+    "components": {
+      "minecraft:item_name": {
+        "text": "Salvage Crowbar",
+        "color": "#F2F2F2",
+        "italic": false
+      },
+      "minecraft:lore": [
+        {
+          "text": "Tier IV",
+          "color": "#E0CA8E",
+          "italic": false
+        }
+      ],
+      "minecraft:item_model": "tide:crowbar",
+      "minecraft:max_stack_size": 1,
+      "minecraft:max_damage": 64,
+      "minecraft:damage": 0,
+      "minecraft:tool": {
+        "rules": [
+          {
+            "blocks": [
+              "minecraft:gray_carpet",
+              "minecraft:white_carpet"
+            ],
+            "speed": 49.13,
+            "correct_for_drops": true
+          },
+          {
+            "blocks": [
+              "minecraft:light_gray_wall_banner",
+              "minecraft:white_wall_banner",
+              "minecraft:white_wool"
+            ],
+            "speed": 68.782,
+            "correct_for_drops": true
+          },
+          {
+            "blocks": "#tide:salvage/hardness/tier_1",
+            "speed": 58.956,
+            "correct_for_drops": true
+          },
+          {
+            "blocks": [
+              "minecraft:ladder",
+              "minecraft:white_concrete_powder"
+            ],
+            "speed": 58.956,
+            "correct_for_drops": true
+          },
+          {
+            "blocks": [
+              "minecraft:cobweb"
+            ],
+            "speed": 78.608,
+            "correct_for_drops": true
+          },
+          {
+            "blocks": "#tide:salvage/hardness/tier_2",
+            "speed": 68.782,
+            "correct_for_drops": true
+          },
+          {
+            "blocks": "#tide:salvage/hardness/tier_3",
+            "speed": 39.304,
+            "correct_for_drops": true
+          },
+          {
+            "blocks": "#tide:salvage/hardness/tier_4",
+            "speed": 44.217,
+            "correct_for_drops": true
+          },
+          {
+            "blocks": "#tide:salvage/hardness/tier_5",
+            "speed": 49.13,
+            "correct_for_drops": true
+          },
+          {
+            "blocks": "#tide:salvage/hardness/tier_6",
+            "speed": 28.9,
+            "correct_for_drops": true
+          },
+          {
+            "blocks": "#tide:salvage/hardness/tier_7",
+            "speed": 20.4,
+            "correct_for_drops": true
+          },
+          {
+            "blocks": "#tide:salvage/hardness/tier_8",
+            "speed": 14.0,
+            "correct_for_drops": true
+          },
+          {
+            "blocks": "#tide:salvage/hardness/tier_9",
+            "speed": 2.0,
+            "correct_for_drops": true
+          },
+          {
+            "blocks": "#tide:salvage/hardness/tier_10",
+            "speed": 2.0,
+            "correct_for_drops": true
+          },
+          {
+            "blocks": "#minecraft:mineable/axe",
+            "speed": 49.13,
+            "correct_for_drops": true
+          }
+        ],
+        "default_mining_speed": 1.0,
+        "damage_per_block": 1
+      },
+      "minecraft:custom_data": {
+        "tide": {
+          "crowbar": true,
+          "crowbar_tier": 4
+        }
+      }
+    }
+  }
+}

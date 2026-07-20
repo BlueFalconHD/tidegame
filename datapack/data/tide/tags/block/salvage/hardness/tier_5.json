@@ -1,0 +1,32 @@
+{
+  "values": [
+    "minecraft:beehive",
+    "minecraft:campfire",
+    "minecraft:composter",
+    "minecraft:green_terracotta",
+    "minecraft:jungle_log",
+    "minecraft:lime_terracotta",
+    "minecraft:mangrove_log",
+    "minecraft:mangrove_wood",
+    "minecraft:note_block",
+    "minecraft:oak_log",
+    "minecraft:oak_wood",
+    "minecraft:pale_oak_log",
+    "minecraft:pale_oak_wood",
+    "minecraft:red_concrete",
+    "minecraft:sandstone",
+    "minecraft:sandstone_slab",
+    "minecraft:sandstone_stairs",
+    "minecraft:sandstone_wall",
+    "minecraft:smooth_sandstone",
+    "minecraft:smooth_sandstone_slab",
+    "minecraft:spruce_log",
+    "minecraft:spruce_wood",
+    "minecraft:stripped_dark_oak_log",
+    "minecraft:stripped_jungle_log",
+    "minecraft:stripped_oak_log",
+    "minecraft:stripped_pale_oak_wood",
+    "minecraft:stripped_spruce_log",
+    "minecraft:stripped_spruce_wood"
+  ]
+}

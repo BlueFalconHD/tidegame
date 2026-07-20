@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "minecraft:prize_pottery_sherd",
+  "result": {
+    "count": 1,
+    "id": "minecraft:smooth_sandstone_stairs"
+  }
+}

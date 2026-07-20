@@ -1,0 +1,18 @@
+{
+  "criteria": {
+    "automatic": {
+      "trigger": "minecraft:tick"
+    }
+  },
+  "rewards": {
+    "recipes": [
+      "tide:item/raft",
+      "tide:item/radio",
+      "tide:item/crowbar/tier_1",
+      "tide:item/crowbar/tier_2",
+      "tide:item/crowbar/tier_3",
+      "tide:item/crowbar/tier_4",
+      "tide:item/crowbar/tier_5"
+    ]
+  }
+}

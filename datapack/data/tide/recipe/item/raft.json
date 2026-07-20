@@ -1,0 +1,53 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "tide_raft",
+  "pattern": [
+    "P P",
+    "PPP",
+    " S "
+  ],
+  "key": {
+    "P": "#minecraft:planks",
+    "S": "minecraft:stick"
+  },
+  "result": {
+    "id": "minecraft:bamboo_raft",
+    "components": {
+      "minecraft:custom_name": {
+        "text": "Island Raft",
+        "color": "aqua",
+        "italic": false
+      },
+      "minecraft:lore": [
+        {
+          "text": "Deploy this on your island to open it",
+          "color": "gray",
+          "italic": false
+        },
+        {
+          "text": "to the outside world.",
+          "color": "gray",
+          "italic": false
+        },
+        {
+          "text": "Punch the deployed raft to pick it up.",
+          "color": "dark_gray",
+          "italic": false
+        }
+      ],
+      "minecraft:custom_data": {
+        "tide": {
+          "island_raft": true
+        }
+      },
+      "minecraft:entity_data": {
+        "id": "minecraft:bamboo_raft",
+        "Invulnerable": true,
+        "Tags": [
+          "tide.raft"
+        ]
+      }
+    }
+  }
+}

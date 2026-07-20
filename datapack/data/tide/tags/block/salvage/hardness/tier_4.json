@@ -1,0 +1,31 @@
+{
+  "values": [
+    "minecraft:acacia_trapdoor",
+    "minecraft:bamboo_door",
+    "minecraft:bamboo_trapdoor",
+    "minecraft:birch_stairs",
+    "minecraft:birch_trapdoor",
+    "minecraft:cherry_trapdoor",
+    "minecraft:crimson_trapdoor",
+    "minecraft:dark_oak_planks",
+    "minecraft:dark_oak_shelf",
+    "minecraft:dark_oak_stairs",
+    "minecraft:dark_oak_trapdoor",
+    "minecraft:jungle_planks",
+    "minecraft:jungle_shelf",
+    "minecraft:jungle_stairs",
+    "minecraft:jungle_trapdoor",
+    "minecraft:mangrove_trapdoor",
+    "minecraft:oak_planks",
+    "minecraft:oak_shelf",
+    "minecraft:oak_stairs",
+    "minecraft:oak_trapdoor",
+    "minecraft:pale_oak_stairs",
+    "minecraft:spruce_door",
+    "minecraft:spruce_planks",
+    "minecraft:spruce_shelf",
+    "minecraft:spruce_stairs",
+    "minecraft:spruce_trapdoor",
+    "minecraft:warped_trapdoor"
+  ]
+}

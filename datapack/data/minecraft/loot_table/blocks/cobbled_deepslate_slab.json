@@ -1,0 +1,431 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "conditions": [
+                {
+                  "block": "minecraft:cobbled_deepslate_slab",
+                  "condition": "minecraft:block_state_property",
+                  "properties": {
+                    "type": "double"
+                  }
+                }
+              ],
+              "count": 2.0,
+              "function": "minecraft:set_count"
+            },
+            {
+              "function": "minecraft:explosion_decay"
+            }
+          ],
+          "name": "minecraft:cobbled_deepslate_slab"
+        }
+      ],
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:inverted",
+          "term": {
+            "condition": "minecraft:all_of",
+            "terms": [
+              {
+                "condition": "minecraft:location_check",
+                "predicate": {
+                  "dimension": "tide:ocean"
+                }
+              },
+              {
+                "condition": "minecraft:match_tool",
+                "predicate": {
+                  "items": "minecraft:breeze_rod",
+                  "predicates": {
+                    "minecraft:custom_data": "{tide:{crowbar:1b}}"
+                  }
+                }
+              },
+              {
+                "block": "minecraft:cobbled_deepslate_slab",
+                "condition": "minecraft:block_state_property"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "bonus_rolls": 0.0,
+      "conditions": [
+        {
+          "condition": "minecraft:location_check",
+          "predicate": {
+            "dimension": "tide:ocean"
+          }
+        },
+        {
+          "condition": "minecraft:match_tool",
+          "predicate": {
+            "items": "minecraft:breeze_rod",
+            "predicates": {
+              "minecraft:custom_data": "{tide:{crowbar:1b}}"
+            }
+          }
+        },
+        {
+          "block": "minecraft:cobbled_deepslate_slab",
+          "condition": "minecraft:block_state_property"
+        },
+        {
+          "condition": "minecraft:inverted",
+          "term": {
+            "block": "minecraft:cobbled_deepslate_slab",
+            "condition": "minecraft:block_state_property",
+            "properties": {
+              "type": "double"
+            }
+          }
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "conditions": [
+                {
+                  "condition": "minecraft:match_tool",
+                  "predicate": {
+                    "items": "minecraft:breeze_rod",
+                    "predicates": {
+                      "minecraft:custom_data": "{tide:{crowbar:1b,crowbar_tier:1b}}"
+                    }
+                  }
+                },
+                {
+                  "chance": 0.025,
+                  "condition": "minecraft:random_chance"
+                }
+              ],
+              "name": "minecraft:cobbled_deepslate_slab"
+            },
+            {
+              "type": "minecraft:item",
+              "conditions": [
+                {
+                  "condition": "minecraft:match_tool",
+                  "predicate": {
+                    "items": "minecraft:breeze_rod",
+                    "predicates": {
+                      "minecraft:custom_data": "{tide:{crowbar:1b,crowbar_tier:2b}}"
+                    }
+                  }
+                },
+                {
+                  "chance": 0.05,
+                  "condition": "minecraft:random_chance"
+                }
+              ],
+              "name": "minecraft:cobbled_deepslate_slab"
+            },
+            {
+              "type": "minecraft:item",
+              "conditions": [
+                {
+                  "condition": "minecraft:match_tool",
+                  "predicate": {
+                    "items": "minecraft:breeze_rod",
+                    "predicates": {
+                      "minecraft:custom_data": "{tide:{crowbar:1b,crowbar_tier:3b}}"
+                    }
+                  }
+                },
+                {
+                  "chance": 0.075,
+                  "condition": "minecraft:random_chance"
+                }
+              ],
+              "name": "minecraft:cobbled_deepslate_slab"
+            },
+            {
+              "type": "minecraft:item",
+              "conditions": [
+                {
+                  "condition": "minecraft:match_tool",
+                  "predicate": {
+                    "items": "minecraft:breeze_rod",
+                    "predicates": {
+                      "minecraft:custom_data": "{tide:{crowbar:1b,crowbar_tier:4b}}"
+                    }
+                  }
+                },
+                {
+                  "chance": 0.1,
+                  "condition": "minecraft:random_chance"
+                }
+              ],
+              "name": "minecraft:cobbled_deepslate_slab"
+            },
+            {
+              "type": "minecraft:item",
+              "conditions": [
+                {
+                  "condition": "minecraft:match_tool",
+                  "predicate": {
+                    "items": "minecraft:breeze_rod",
+                    "predicates": {
+                      "minecraft:custom_data": "{tide:{crowbar:1b,crowbar_tier:5b}}"
+                    }
+                  }
+                },
+                {
+                  "chance": 0.125,
+                  "condition": "minecraft:random_chance"
+                }
+              ],
+              "name": "minecraft:cobbled_deepslate_slab"
+            },
+            {
+              "type": "minecraft:loot_table",
+              "functions": [
+                {
+                  "add": false,
+                  "count": {
+                    "type": "minecraft:binomial",
+                    "n": 1.0,
+                    "p": 0.44
+                  },
+                  "function": "minecraft:set_count"
+                }
+              ],
+              "value": "tide:salvage/material/deepslate"
+            }
+          ]
+        }
+      ],
+      "rolls": 1.0
+    },
+    {
+      "bonus_rolls": 0.0,
+      "conditions": [
+        {
+          "condition": "minecraft:location_check",
+          "predicate": {
+            "dimension": "tide:ocean"
+          }
+        },
+        {
+          "condition": "minecraft:match_tool",
+          "predicate": {
+            "items": "minecraft:breeze_rod",
+            "predicates": {
+              "minecraft:custom_data": "{tide:{crowbar:1b}}"
+            }
+          }
+        },
+        {
+          "block": "minecraft:cobbled_deepslate_slab",
+          "condition": "minecraft:block_state_property"
+        },
+        {
+          "block": "minecraft:cobbled_deepslate_slab",
+          "condition": "minecraft:block_state_property",
+          "properties": {
+            "type": "double"
+          }
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "conditions": [
+                {
+                  "condition": "minecraft:match_tool",
+                  "predicate": {
+                    "items": "minecraft:breeze_rod",
+                    "predicates": {
+                      "minecraft:custom_data": "{tide:{crowbar:1b,crowbar_tier:1b}}"
+                    }
+                  }
+                },
+                {
+                  "chance": 0.025,
+                  "condition": "minecraft:random_chance"
+                }
+              ],
+              "name": "minecraft:cobbled_deepslate_slab",
+              "functions": [
+                {
+                  "add": false,
+                  "count": 2.0,
+                  "function": "minecraft:set_count"
+                }
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "conditions": [
+                {
+                  "condition": "minecraft:match_tool",
+                  "predicate": {
+                    "items": "minecraft:breeze_rod",
+                    "predicates": {
+                      "minecraft:custom_data": "{tide:{crowbar:1b,crowbar_tier:2b}}"
+                    }
+                  }
+                },
+                {
+                  "chance": 0.05,
+                  "condition": "minecraft:random_chance"
+                }
+              ],
+              "name": "minecraft:cobbled_deepslate_slab",
+              "functions": [
+                {
+                  "add": false,
+                  "count": 2.0,
+                  "function": "minecraft:set_count"
+                }
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "conditions": [
+                {
+                  "condition": "minecraft:match_tool",
+                  "predicate": {
+                    "items": "minecraft:breeze_rod",
+                    "predicates": {
+                      "minecraft:custom_data": "{tide:{crowbar:1b,crowbar_tier:3b}}"
+                    }
+                  }
+                },
+                {
+                  "chance": 0.075,
+                  "condition": "minecraft:random_chance"
+                }
+              ],
+              "name": "minecraft:cobbled_deepslate_slab",
+              "functions": [
+                {
+                  "add": false,
+                  "count": 2.0,
+                  "function": "minecraft:set_count"
+                }
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "conditions": [
+                {
+                  "condition": "minecraft:match_tool",
+                  "predicate": {
+                    "items": "minecraft:breeze_rod",
+                    "predicates": {
+                      "minecraft:custom_data": "{tide:{crowbar:1b,crowbar_tier:4b}}"
+                    }
+                  }
+                },
+                {
+                  "chance": 0.1,
+                  "condition": "minecraft:random_chance"
+                }
+              ],
+              "name": "minecraft:cobbled_deepslate_slab",
+              "functions": [
+                {
+                  "add": false,
+                  "count": 2.0,
+                  "function": "minecraft:set_count"
+                }
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "conditions": [
+                {
+                  "condition": "minecraft:match_tool",
+                  "predicate": {
+                    "items": "minecraft:breeze_rod",
+                    "predicates": {
+                      "minecraft:custom_data": "{tide:{crowbar:1b,crowbar_tier:5b}}"
+                    }
+                  }
+                },
+                {
+                  "chance": 0.125,
+                  "condition": "minecraft:random_chance"
+                }
+              ],
+              "name": "minecraft:cobbled_deepslate_slab",
+              "functions": [
+                {
+                  "add": false,
+                  "count": 2.0,
+                  "function": "minecraft:set_count"
+                }
+              ]
+            },
+            {
+              "type": "minecraft:loot_table",
+              "functions": [
+                {
+                  "add": false,
+                  "count": 1.0,
+                  "function": "minecraft:set_count"
+                }
+              ],
+              "value": "tide:salvage/material/deepslate"
+            }
+          ]
+        }
+      ],
+      "rolls": 1.0
+    },
+    {
+      "bonus_rolls": 0.0,
+      "conditions": [
+        {
+          "condition": "minecraft:location_check",
+          "predicate": {
+            "dimension": "tide:ocean"
+          }
+        },
+        {
+          "condition": "minecraft:match_tool",
+          "predicate": {
+            "items": "minecraft:breeze_rod",
+            "predicates": {
+              "minecraft:custom_data": "{tide:{crowbar:1b}}"
+            }
+          }
+        },
+        {
+          "block": "minecraft:cobbled_deepslate_slab",
+          "condition": "minecraft:block_state_property"
+        },
+        {
+          "chance": 0.031,
+          "condition": "minecraft:random_chance"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "tide:salvage/finds"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "minecraft:blocks/cobbled_deepslate_slab"
+}

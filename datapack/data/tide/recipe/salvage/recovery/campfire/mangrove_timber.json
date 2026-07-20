@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:campfire_cooking",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.0,
+  "ingredient": "minecraft:burn_pottery_sherd",
+  "result": {
+    "count": 1,
+    "id": "minecraft:mangrove_planks"
+  }
+}

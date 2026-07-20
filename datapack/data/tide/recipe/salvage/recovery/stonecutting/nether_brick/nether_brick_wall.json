@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "minecraft:knowledge_book",
+  "result": {
+    "count": 1,
+    "id": "minecraft:nether_brick_wall"
+  }
+}
