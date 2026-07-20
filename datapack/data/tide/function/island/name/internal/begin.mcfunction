@@ -15,4 +15,5 @@ execute in minecraft:overworld run setblock 1 -64 0 minecraft:anvil
 execute in minecraft:overworld positioned 1 -64 0 run inventory @a[tag=tide.island.name.source,limit=1] block ~ ~ ~ Rename Island
 loot replace entity @a[tag=tide.island.name.source,limit=1] player.cursor loot tide:island/name/token
 title @a[tag=tide.island.name.source,limit=1] actionbar {"text":"Rename the name tag and take the result (costs 1 level).","color":"#E0CA8E"}
+schedule function tide:island/name/internal/poll 1t replace
 return 1

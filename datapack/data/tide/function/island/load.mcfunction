@@ -18,5 +18,7 @@ execute unless data storage tide:island free_ids run data modify storage tide:is
 execute in minecraft:overworld run forceload add 0 0
 execute in minecraft:overworld run setblock 1 -64 0 minecraft:anvil
 tag @a remove tide.island.name.ready
+schedule function tide:island/name/internal/maintenance 20t replace
+execute if entity @a[tag=tide.island.renaming] run schedule function tide:island/name/internal/poll 1t replace
 
 function tide:island/raft/load
