@@ -209,9 +209,14 @@
               "functions": [
                 {
                   "add": false,
+                  "count": 1.0,
+                  "function": "minecraft:set_count"
+                },
+                {
+                  "add": true,
                   "count": {
                     "type": "minecraft:binomial",
-                    "n": 6.0,
+                    "n": 5.0,
                     "p": 0.88
                   },
                   "function": "minecraft:set_count"

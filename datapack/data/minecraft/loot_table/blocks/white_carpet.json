@@ -170,10 +170,15 @@
               "functions": [
                 {
                   "add": false,
+                  "count": 1.0,
+                  "function": "minecraft:set_count"
+                },
+                {
+                  "add": true,
                   "count": {
                     "type": "minecraft:binomial",
-                    "n": 3.0,
-                    "p": 0.782222
+                    "n": 2.0,
+                    "p": 0.733333
                   },
                   "function": "minecraft:set_count"
                 }

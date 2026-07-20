@@ -22,7 +22,6 @@ from salvage_manifest import (
     LOOT_TABLE_OVERRIDES,
     MATERIALS,
     SLAB_BLOCKS,
-    guaranteed_salvage_drop,
     hardness_tier,
     salvage_units,
     unlock_speed,
@@ -145,25 +144,32 @@ def eligible_block_conditions(block: str) -> list[dict[str, Any]]:
     return []
 
 
-def count_function(expected_units: float, add: bool = False) -> dict[str, Any]:
-    if expected_units == 1.0:
-        return {
-            "add": add,
+def salvage_count_functions(expected_units: float) -> list[dict[str, Any]]:
+    functions: list[dict[str, Any]] = [
+        {
+            "add": False,
             "count": 1.0,
             "function": "minecraft:set_count",
         }
+    ]
+    remaining_units = expected_units - 1.0
+    if remaining_units <= 0.0:
+        return functions
 
-    trials = max(1, math.ceil(expected_units))
-    probability = min(1.0, expected_units * RETURN_RATE / trials)
-    return {
-        "add": add,
-        "count": {
-            "type": "minecraft:binomial",
-            "n": float(trials),
-            "p": round(probability, 6),
-        },
-        "function": "minecraft:set_count",
-    }
+    trials = math.ceil(remaining_units)
+    probability = min(1.0, remaining_units * RETURN_RATE / trials)
+    functions.append(
+        {
+            "add": True,
+            "count": {
+                "type": "minecraft:binomial",
+                "n": float(trials),
+                "p": round(probability, 6),
+            },
+            "function": "minecraft:set_count",
+        }
+    )
+    return functions
 
 
 def crowbar_tier_for_hardness(hardness: int) -> int:
@@ -201,13 +207,10 @@ def intact_entry(block: str, tier: int, count: int) -> dict[str, Any]:
     return entry
 
 
-def salvage_entry(block: str, material_id: str, units: float) -> dict[str, Any]:
-    functions = [count_function(units)]
-    if guaranteed_salvage_drop(block) and units > 1.0:
-        functions = [count_function(1.0), count_function(units - 1.0, add=True)]
+def salvage_entry(material_id: str, units: float) -> dict[str, Any]:
     return {
         "type": "minecraft:loot_table",
-        "functions": functions,
+        "functions": salvage_count_functions(units),
         "value": f"tide:salvage/material/{material_id}",
     }
 
@@ -229,7 +232,7 @@ def salvage_drop_pool(
                 "type": "minecraft:alternatives",
                 "children": [
                     *(intact_entry(block, tier, intact_count) for tier in range(1, 6)),
-                    salvage_entry(block, material_id, units),
+                    salvage_entry(material_id, units),
                 ],
             }
         ],
