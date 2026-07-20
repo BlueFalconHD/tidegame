@@ -18,8 +18,13 @@
                 },
                 "minecraft:lore": [
                   {
-                    "text": "Tier III",
+                    "text": "Tier III · Efficient through Hardness 7",
                     "color": "#E0CA8E",
+                    "italic": false
+                  },
+                  {
+                    "text": "New materials start slow; earlier ones get faster.",
+                    "color": "gray",
                     "italic": false
                   }
                 ],

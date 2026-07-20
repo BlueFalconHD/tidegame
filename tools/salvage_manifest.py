@@ -709,4 +709,8 @@ def salvage_units(block: str, material_id: str) -> float:
     return 1.0
 
 
+def guaranteed_salvage_drop(block: str) -> bool:
+    return block in {"anvil", "iron_bars"} or block.endswith("_chain")
+
+
 BLOCK_MATERIALS = block_materials()

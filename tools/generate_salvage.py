@@ -22,6 +22,7 @@ from salvage_manifest import (
     LOOT_TABLE_OVERRIDES,
     MATERIALS,
     SLAB_BLOCKS,
+    guaranteed_salvage_drop,
     hardness_tier,
     salvage_units,
     unlock_speed,
@@ -144,10 +145,10 @@ def eligible_block_conditions(block: str) -> list[dict[str, Any]]:
     return []
 
 
-def count_function(expected_units: float) -> dict[str, Any]:
+def count_function(expected_units: float, add: bool = False) -> dict[str, Any]:
     if expected_units == 1.0:
         return {
-            "add": False,
+            "add": add,
             "count": 1.0,
             "function": "minecraft:set_count",
         }
@@ -155,7 +156,7 @@ def count_function(expected_units: float) -> dict[str, Any]:
     trials = max(1, math.ceil(expected_units))
     probability = min(1.0, expected_units * RETURN_RATE / trials)
     return {
-        "add": False,
+        "add": add,
         "count": {
             "type": "minecraft:binomial",
             "n": float(trials),
@@ -200,10 +201,13 @@ def intact_entry(block: str, tier: int, count: int) -> dict[str, Any]:
     return entry
 
 
-def salvage_entry(material_id: str, units: float) -> dict[str, Any]:
+def salvage_entry(block: str, material_id: str, units: float) -> dict[str, Any]:
+    functions = [count_function(units)]
+    if guaranteed_salvage_drop(block) and units > 1.0:
+        functions = [count_function(1.0), count_function(units - 1.0, add=True)]
     return {
         "type": "minecraft:loot_table",
-        "functions": [count_function(units)],
+        "functions": functions,
         "value": f"tide:salvage/material/{material_id}",
     }
 
@@ -225,7 +229,7 @@ def salvage_drop_pool(
                 "type": "minecraft:alternatives",
                 "children": [
                     *(intact_entry(block, tier, intact_count) for tier in range(1, 6)),
-                    salvage_entry(material_id, units),
+                    salvage_entry(block, material_id, units),
                 ],
             }
         ],
