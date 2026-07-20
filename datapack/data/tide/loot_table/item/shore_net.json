@@ -1,0 +1,46 @@
+{
+  "type": "minecraft:command",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:string",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_name": {
+                  "text": "Shore Net",
+                  "color": "#E0CA8E",
+                  "italic": false
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Set it along your island's shore.",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "Collects debris after a storm.",
+                    "color": "dark_gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:item_model": "minecraft:cobweb",
+                "minecraft:max_stack_size": 1,
+                "minecraft:custom_data": {
+                  "tide": {
+                    "shore_net": true
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
