@@ -14,11 +14,21 @@ function tide:island/raft/destination/list/load_owner with storage tide:raft scr
 execute unless score #travel_owner_found tide.raft.tmp matches 1 run return 0
 data modify storage tide:raft scratch.destination.owner_name set from storage tide:raft scratch.owner.name
 
+scoreboard players set #travel_online tide.raft.tmp 0
+execute as @a[tag=tide.island.has_island] if score @s tide.identifier.island = #travel_candidate tide.identifier.island run scoreboard players set #travel_online tide.raft.tmp 1
+execute if score #travel_online tide.raft.tmp matches 1 run data modify storage tide:raft scratch.destination.status_marker set value "●"
+execute if score #travel_online tide.raft.tmp matches 1 run data modify storage tide:raft scratch.destination.status_label set value "Online"
+execute if score #travel_online tide.raft.tmp matches 1 run data modify storage tide:raft scratch.destination.status_color set value "#E0CA8E"
+execute unless score #travel_online tide.raft.tmp matches 1 run data modify storage tide:raft scratch.destination.status_marker set value "○"
+execute unless score #travel_online tide.raft.tmp matches 1 run data modify storage tide:raft scratch.destination.status_label set value "No members online"
+execute unless score #travel_online tide.raft.tmp matches 1 run data modify storage tide:raft scratch.destination.status_color set value "gray"
+
 scoreboard players operation #travel_action tide.raft.tmp = #travel_candidate tide.identifier.island
 scoreboard players add #travel_action tide.raft.tmp 2
 execute store result storage tide:raft scratch.destination.action_target int 1 run scoreboard players get #travel_action tide.raft.tmp
 
 $data modify storage tide:raft scratch.seen append value {island:$(island)}
-function tide:island/raft/destination/list/render with storage tide:raft scratch.destination
+execute if score #travel_online tide.raft.tmp matches 1 run data modify storage tide:raft scratch.destinations.online append from storage tide:raft scratch.destination
+execute unless score #travel_online tide.raft.tmp matches 1 run data modify storage tide:raft scratch.destinations.offline append from storage tide:raft scratch.destination
 scoreboard players add #travel_entries tide.raft.tmp 1
 return 1
